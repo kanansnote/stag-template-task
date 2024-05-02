@@ -5,6 +5,10 @@
   background-color: black;
 }
 
+:root {
+  --cotton-candy-pink: #FF76CE;
+}
+
 a {
   text-decoration: none;
   color: white;
@@ -25,7 +29,7 @@ header {
   height: 96vh;
   color: #fff;
   border-color: rgba(49, 53, 55, 0.05);
-  background: linear-gradient(rgba(0, 130, 204, 0.06) 100%, rgba(0, 130, 204, 0.5) 0%) !important;
+  background-color: var(--cotton-candy-pink);
   border: 0.75px solid rgba(252, 252, 252, 0.05);
   padding: 34px 28px 24px;
 }
@@ -50,7 +54,6 @@ header #headerTop #headerTop__Bottom {
   align-items: center;
   justify-content: space-around;
   padding: 27px 0 27px 27px;
-  background: linear-gradient(-90deg, rgba(0, 170, 255, 0.04) 0%, rgba(0, 170, 255, 0.02) 100%);
 }
 header #headerTop #headerTop__Bottom img {
   width: 15vh;
@@ -84,4 +87,48 @@ header nav ul li a img {
   height: 3vh;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+main {
+  position: relative;
+  left: 80vh;
+  width: 50%;
+  height: 100%;
+  padding: 34px 28px 24px;
+}
+main #Intro {
+  display: flex;
+}
+main #Intro #hero {
+  width: 35vh;
+  height: 35vh;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+main #Intro #introRight #introRight__Top #introRight__TopLeft {
+  display: flex;
+  align-items: center;
+  gap: 1vh;
+}
+main #Intro #introRight #introRight__Top #introRight__TopLeft a {
+  display: flex;
+  align-items: center;
+  gap: 1vh;
+}
+main #Intro #introRight #introRight__Top #introRight__TopLeft a span {
+  width: 6px;
+  height: 6px;
+  background-color: #00A34C;
+  border-radius: 50%;
+}
+main #Intro #introRight #introRight__Top #introRight__TopCenter {
+  display: flex;
+  align-items: center;
+  gap: 1vh;
+}
+main #Intro #introRight #introRight__Top #introRight__TopCenter i {
+  color: white;
+}
+main #Intro #introRight #introRight__Top #introRight__TopCenter span {
+  color: white;
 }/*# sourceMappingURL=style.css.map */

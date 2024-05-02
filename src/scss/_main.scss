@@ -1,3 +1,56 @@
 main {
-    
+    position: relative;
+    left: 80vh;
+    width: 50%;
+    height: 100%;
+    padding: 34px 28px 24px;
+
+    #Intro {
+        display: flex;
+
+        #hero {
+            width: 35vh;
+            height: 35vh;
+            object-fit: contain;
+        }
+
+        #introRight {
+
+            #introRight__Top {
+
+                #introRight__TopLeft {
+                    display: flex;
+                    align-items: center;
+                    gap: 1vh;
+
+                    a {
+                        display: flex;
+                        align-items: center;
+                        gap: 1vh;
+
+                        span {
+                            width: 6px;
+                            height: 6px;
+                            background-color: #00A34C;
+                            border-radius: 50%;
+                        }
+                    }
+                }
+
+                #introRight__TopCenter {
+                    display: flex;
+                    align-items: center;
+                    gap: 1vh;
+
+                    i {
+                        color: white;
+                    }
+
+                    span {
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
 }
