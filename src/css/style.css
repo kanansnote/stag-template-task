@@ -44,6 +44,11 @@ div {
   border: 0.75px solid rgba(252, 252, 252, 0.05);
 }
 
+img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 .a-effect {
   background-color: #f9cb7e;
   color: #000;
@@ -167,8 +172,6 @@ main {
 main #Intro #hero {
   width: 35vh;
   height: 35vh;
-  -o-object-fit: contain;
-     object-fit: contain;
 }
 main #Intro .introRight {
   width: 100%;
@@ -284,8 +287,6 @@ main .Projects .projectsMain .projectsMain__Cards .swiper-slide {
 main .Projects .projectsMain .projectsMain__Cards .swiper-slide img {
   width: 35vh;
   height: 35vh;
-  -o-object-fit: contain;
-     object-fit: contain;
 }
 main #Partners {
   flex-direction: column;
@@ -300,8 +301,6 @@ main #Partners .partnersHeader ul {
 main #Partners .partnersHeader ul li img {
   width: 15vh;
   height: 15vh;
-  -o-object-fit: contain;
-     object-fit: contain;
 }
 main #Partners ul {
   justify-content: space-between;
@@ -321,4 +320,35 @@ main #Services ul {
 }
 main #Services ul li {
   flex-basis: 49%;
+}
+main #Stack {
+  flex-direction: column;
+}
+main #Stack .stackMain {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3vh;
+}
+main #Stack .stackMain .stackMain__Card {
+  display: flex;
+  flex-basis: 48%;
+}
+main .Testimonial {
+  flex-direction: column;
+}
+main .Testimonial ul {
+  display: flex;
+}
+main .Testimonial ul .testimonialCard {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+}
+main .Testimonial ul .testimonialCard .testimonialCard__Top {
+  display: flex;
+}
+main .Testimonial ul .testimonialCard .testimonialCard__Top .testimonialCard__TopText {
+  display: flex;
+  flex-direction: column;
 }/*# sourceMappingURL=style.css.map */

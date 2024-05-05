@@ -44,6 +44,10 @@ div {
     border: .75px solid rgba(252, 252, 252, 0.05);
 }
 
+img {
+    object-fit: contain;
+}
+
 .a-effect {
     background-color: #f9cb7e;
     color: #000;

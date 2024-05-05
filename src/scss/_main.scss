@@ -10,7 +10,6 @@ main {
         #hero {
             width: 35vh;
             height: 35vh;
-            object-fit: contain;
         }
 
         .introRight {
@@ -153,7 +152,6 @@ main {
                     img {
                         width: 35vh;
                         height: 35vh;
-                        object-fit: contain;
                     }
                 }
             }
@@ -175,7 +173,6 @@ main {
                     img {
                         width: 15vh;
                         height: 15vh;
-                        object-fit: contain;
                     }
                 }
             }
@@ -208,6 +205,47 @@ main {
             
             li {
                 flex-basis: 49%;
+            }
+        }
+    }
+
+    #Stack {
+        flex-direction: column;
+
+        .stackMain {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 3vh;
+            
+            .stackMain__Card {
+                display: flex;
+                flex-basis: 48%;
+            }
+        }
+    }
+
+    #Blog {}
+
+    .Testimonial {
+        flex-direction: column;
+        
+        ul {
+            display: flex;
+            
+            .testimonialCard {
+                display: flex;
+                flex-direction: column;
+                flex-basis: 50%;
+
+                .testimonialCard__Top {
+                    display: flex;
+
+                    .testimonialCard__TopText {
+                        display: flex;
+                        flex-direction: column;
+                    }
+                }
             }
         }
     }
