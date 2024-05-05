@@ -13,11 +13,11 @@ header {
     border: .75px solid rgba(252, 252, 252, 0.05);
     padding: 34px 28px 24px;
 
-    #headerTop {
+    .headerTop {
         display: flex;
         flex-direction: column;
         
-        #headerTop__Top {
+        .headerTop__Top {
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -31,7 +31,7 @@ header {
             }
         }
 
-        #headerTop__Bottom {
+        .headerTop__Bottom {
             display: flex;
             align-items: center;
             justify-content: space-around;
@@ -43,7 +43,7 @@ header {
                 object-fit: contain;
             }
 
-            #headerTop__BottomText {
+            .headerTop__BottomText {
                 display: flex;
                 flex-direction: column;
                 gap: 1vh;

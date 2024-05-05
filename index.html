@@ -6,20 +6,22 @@
     <title>Stag</title>
     <link rel="stylesheet" href="./src/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
 <body>
     <header>
-        <div id="headerTop">
-            <div id="headerTop__Top">
+        <div class="headerTop">
+            <div class="headerTop__Top">
                 <a href="">
                     <img src="./src/img/header/logo.svg" alt="">
                     <span>STAG</span>
                 </a>
                 <p id="currentTime">13:26</p>
             </div>
-            <div id="headerTop__Bottom">
+            <div class="headerTop__Bottom">
                 <img src="./src/img/header/me.png" alt="">
-                <div id="headerTop__BottomText">
+                <div class="headerTop__BottomText">
                     <h3>David Henderson</h3>
                     <p>Front-End Developer</p>
                     <span><i class="fa-solid fa-location-dot"></i>Los Angeles, CA</span>
@@ -40,31 +42,293 @@
     <main>
         <section id="Intro">
             <img id="hero" src="./src/img/intro/hero.jpg" alt="">
-            <div id="introRight">
-                <div id="introRight__Top">
-                    <div id="introRight__TopLeft">
+            <div class="introRight">
+                <div class="introRight__Top">
+                    <div class="introRight__TopLeft">
                         <a href="#">
                             <span></span>
                             Available for freelance work
                         </a>
                     </div>
-                    <div id="introRight__TopCenter">
+                    <div class="introRight__TopCenter">
                         <i class="fa-regular fa-clock"></i>
                         <span>Thursday, 2 May, 2024</span>
                     </div>
-                    <div>
-
+                    <div class="introRight__TopRight">
+                        <a href="#" class="button-effect a-effect">
+                            <span class="button-effect-inner">
+                                <span class="button-effect-text" data-effect="Contact Me">Contact Me</span>
+                            </span>
+                        </a>
                     </div>
                 </div>
-                <div id="introRight__Bottom">
-
+                <div class="introRight__Bottom">
+                    <div class="introRight__BottomLeft">
+                        <span>Web Developer</span>
+                        <h1>David Henderson 👋🏽</h1>
+                        <p>I am a San francisco-based product designer with a focus on web design, illustration, a visual development. 
+                            I have a diverse range of experience and industries.
+                        </p>
+                    </div>
+                    <div class="introRight__BottomRight">
+                        <div class="introRight__BottomRight__Top">
+                            <span>44 Baker Street, CA</span>
+                            <span><i class="fa-solid fa-location-dot"></i>USA</span>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </section>
+        <section class="Projects swiper-container">
+            <div class="projectsHeader sectionHeader">
+                <a href="#" class="button-effect a-effect">
+                    <span class="button-effect-inner">
+                        <span class="button-effect-text" data-effect="Projects">Projects</span>
+                    </span>
+                </a>
+                <ul class="marqueeEffect">
+                    <li>It is a long established fact that a reader will distracted by the readable content of a page when looking an its readable</li>
+                    <li>It is a long established fact that a reader will distracted by the readable content of a page when looking an its readable</li>
+                    <li>It is a long established fact that a reader will distracted by the readable content of a page when looking an its readable</li>
+                </ul>
+                <div class="button-prev BothSwiperArrows">
+                    <i class="fa-solid fa-angle-left"></i>
+                </div>
+                <div class="button-next BothSwiperArrows">
+                    <i class="fa-solid fa-angle-right"></i>
+                </div>
+            </div>
+            <div class="projectsMain projectsMain1">
+                <div class="projectsMain__Cards swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./src/img/projects/project-1.png" alt="Projects Image 1">
+                        <div>
+                            <a href="https://wpriverthemes.com/HTML/stag/project-detail.html">Retro Remix
+                                <span>UX Design</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./src/img/projects/project-2.png" alt="Projects Image 2">
+                        <div>
+                            <a href="https://wpriverthemes.com/HTML/stag/project-detail.html">Mystical Meodows
+                                <span>Web Development</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./src/img/projects/project-3.png" alt="Projects Image 3">
+                        <div>
+                            <a href="https://wpriverthemes.com/HTML/stag/project-detail.html">Cybernetic Dreams
+                                <span>Brand Marketing</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./src/img/projects/project-1.png" alt="Projects Image 1">
+                        <div>
+                            <a href="https://wpriverthemes.com/HTML/stag/project-detail.html">Retro Remix
+                                <span>UX Design</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="projectsMain projectsMain2">
+                <div class="projectsMain__Cards swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./src/img/projects/project-4.png" alt="Projects Image 4">
+                        <div>
+                            <a href="https://wpriverthemes.com/HTML/stag/project-detail.html">Light PLay
+                                <span>SEO</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./src/img/projects/project-5.png" alt="Projects Image 5">
+                        <div>
+                            <a href="https://wpriverthemes.com/HTML/stag/project-detail.html">Synthwave Sympony
+                                <span>Social Media</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./src/img/projects/project-6.png" alt="Projects Image 6">
+                        <div>
+                            <a href="https://wpriverthemes.com/HTML/stag/project-detail.html">Mindscapes
+                                <span>Robotic Automation</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./src/img/projects/project-1.png" alt="Projects Image 1">
+                        <div>
+                            <a href="https://wpriverthemes.com/HTML/stag/project-detail.html">Light Play
+                                <span>SEO</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="Partners">
+            <div class="partnersHeader sectionHeader">
+                <h4>Partners</h4>
+                <ul>
+                    <li><img src="./src/img/partners/client-1.png" alt="Client 1"></li>
+                    <li><img src="./src/img/partners/client-2.png" alt="Client 2"></li>
+                    <li><img src="./src/img/partners/client-3.png" alt="Client 3"></li>
+                    <li><img src="./src/img/partners/client-4.png" alt="Client 4"></li>
+                    <li><img src="./src/img/partners/client-5.png" alt="Client 5"></li>
+                    <li><img src="./src/img/partners/client-6.png" alt="Client 6"></li>
+                    <li><img src="./src/img/partners/client-1.png" alt="Client 1"></li>
+                    <li><img src="./src/img/partners/client-2.png" alt="Client 2"></li>
+                    <li><img src="./src/img/partners/client-3.png" alt="Client 3"></li>
+                    <li><img src="./src/img/partners/client-4.png" alt="Client 4"></li>
+                    <li><img src="./src/img/partners/client-5.png" alt="Client 5"></li>
+                    <li><img src="./src/img/partners/client-6.png" alt="Client 6"></li>
+                </ul>
+            </div>
+            <ul>
+                <li>
+                    <h2>12+</h2>
+                    <p>Years of experience</p>
+                </li>
+                <li>
+                    <h2>100+</h2>
+                    <p>Completed Projects</p>
+                </li>
+                <li>
+                    <h2>$16M</h2>
+                    <p>Partners Raised</p>
+                </li>
+            </ul>
+        </section>
+        <section id="EducationAndExperience">
+            <ul class="education">
+                <li>
+                    <img src="./src/img/education-experience/edc-3.jpg" alt="">
+                    <div>
+                        <span>2020 - 2024</span>
+                        <a href="#">Webflow Developer & Co-Founder</a>
+                        <p>IBM Technologies</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="./src/img/education-experience/edc-2.jpg" alt="">
+                    <div>
+                        <span>2017 - 2020</span>
+                        <a href="#">Front-End Developer</a>
+                        <p>Spotify</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="./src/img/education-experience/edc-1.jpg" alt="">
+                    <div>
+                        <span>2007 - 2017</span>
+                        <a href="#">Web Designer & Developer</a>
+                        <p>Adobe Creative Cloud</p>
+                    </div>
+                </li>
+            </ul>
+            <ul class="experience">
+                <li>
+                    <img src="./src/img/education-experience/exp-3.png" alt="">
+                    <div>
+                        <span>2020 - 2024</span>
+                        <a href="#">Cloud Development Operation</a>
+                        <p>Mandro Studio</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="./src/img/education-experience/exp-2.png" alt="">
+                    <div>
+                        <span>2017 - 2020</span>
+                        <a href="#">Full Stack Developer</a>
+                        <p>Larsen & Toubro</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="./src/img/education-experience/exp-1.png" alt="">
+                    <div>
+                        <span>2007 - 2017</span>
+                        <a href="#">Figma Designing & Prototyping</a>
+                        <p>Bluebase Designs</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section id="Services">
+            <div class="sectionHeader">
 
+            </div>
+            <ul>
+                <li class="serviceCard">
+                    <div class="serviceCard__TextAndImage">
+                        <div class="serviceCard__Text">
+                            <a href="">Website Design</a>
+                            <p>I created digital products with unique ideas use Figma</p>
+                        </div>
+                        <i></i>
+                    </div>
+                    <span>24 Projects</span>
+                </li>
+                <li class="serviceCard">
+                    <div class="serviceCard__TextAndImage">
+                        <div class="serviceCard__Text">
+                            <a href="">Web Development</a>
+                            <p>I build website go live with Framer, Webflow</p>
+                        </div>
+                        <i></i>
+                    </div>
+                    <span>126 Projects</span>
+                </li>
+                <li class="serviceCard">
+                    <div class="serviceCard__TextAndImage">
+                        <div class="serviceCard__Text">
+                            <a href="">SEO/Marketing</a>
+                            <p>Optimized websites for SEO friendly experience</p>
+                        </div>
+                        <i></i>
+                    </div>
+                    <span>126 Projects</span>
+                </li>
+                <li class="serviceCard">
+                    <div class="serviceCard__TextAndImage">
+                        <div class="serviceCard__Text">
+                            <a href="">Branding</a>
+                            <p>Managed brands for companies</p>
+                        </div>
+                        <i></i>
+                    </div>
+                    <span>88 Projects</span>
+                </li>
+                <li class="serviceCard">
+                    <div class="serviceCard__TextAndImage">
+                        <div class="serviceCard__Text">
+                            <a href="">Cloud Services</a>
+                            <p>The best privacy policy online network</p>
+                        </div>
+                        <i></i>
+                    </div>
+                    <span>56 Projects</span>
+                </li>
+                <li class="serviceCard">
+                    <div class="serviceCard__TextAndImage">
+                        <div class="serviceCard__Text">
+                            <a href="">Network Security</a>
+                            <p>The best privacy policy online network</p>
+                        </div>
+                        <i></i>
+                    </div>
+                    <span>13 Projects</span>
+                </li>
+            </ul>
         </section>
     </main>
     <footer>
 
     </footer>
+    <script src="./src/js/script.js"></script>
 </body>
 </html>

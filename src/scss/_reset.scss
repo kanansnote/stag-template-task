@@ -2,11 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
     background-color: black;
 }
 
 :root {
-    --cotton-candy-pink: #FF76CE;
+    --cotton-candy-pink: #ff76cf3d;
 }
 
 a {
@@ -15,5 +18,69 @@ a {
 }
 
 ul {
+    display: flex;
     list-style-type: none;
+}
+
+section {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border: .75px solid rgba(252, 252, 252, 0.05);
+    background-color: var(--cotton-candy-pink);
+}
+
+.sectionHeader {
+    display: flex;
+}
+
+.marqueeEffect {
+    display: flex;
+    -webkit-mask-image-: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 12.5%, rgb(0, 0, 0) 87.5%, rgba(0, 0, 0, 0) 100%);
+    animation: textanim 10s infinite linear;
+}
+
+div {
+    border: .75px solid rgba(252, 252, 252, 0.05);
+}
+
+.a-effect {
+    background-color: #f9cb7e;
+    color: #000;
+}
+
+.button-effect-inner,
+.button-effect-text {
+    display: inline-block;
+    width: max-content;
+}
+
+.button-effect-inner {
+    height: 1.75em;
+    overflow: hidden;
+    position: relative;
+}
+
+.button-effect-text {
+    line-height: 2;
+    transition: transform 0.4s ease-out;
+}
+
+.button-effect-text::after {
+    content: attr(data-effect);
+    display: block;
+}
+
+.button-effect:hover {
+    background-color: #f9cb7e;
+    color: #000;
+}
+
+.a-effect:hover {
+    background-color: #161616;
+    color: #fff;
+}
+
+.button-effect:hover .button-effect-text {
+    transform: translateY(-50%);
 }

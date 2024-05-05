@@ -1,12 +1,11 @@
 main {
     position: relative;
-    left: 80vh;
-    width: 50%;
+    left: 65vh;
+    width: 150vh;
     height: 100%;
     padding: 34px 28px 24px;
 
     #Intro {
-        display: flex;
 
         #hero {
             width: 35vh;
@@ -14,11 +13,14 @@ main {
             object-fit: contain;
         }
 
-        #introRight {
+        .introRight {
+            width: 100%;
 
-            #introRight__Top {
+            .introRight__Top {
+                display: flex;
+                justify-content: space-between;
 
-                #introRight__TopLeft {
+                .introRight__TopLeft {
                     display: flex;
                     align-items: center;
                     gap: 1vh;
@@ -37,7 +39,7 @@ main {
                     }
                 }
 
-                #introRight__TopCenter {
+                .introRight__TopCenter {
                     display: flex;
                     align-items: center;
                     gap: 1vh;
@@ -50,6 +52,162 @@ main {
                         color: white;
                     }
                 }
+
+                .introRight__TopRight {
+                    display: flex;
+                }
+            }
+
+            .introRight__Bottom {
+                display: flex;
+
+                .introRight__BottomLeft {
+                    display: flex;
+                    flex-direction: column;
+                    flex-basis: 50%;
+                }
+
+                .introRight__BottomRight {
+                    display: flex;
+                    flex-direction: column;
+                    flex-basis: 50%;
+
+                    .introRight__BottomRight__Top {
+                        display: flex;
+                        justify-content: space-between;
+                    }
+
+                }
+            }
+        }
+    }
+
+    .Projects {
+        flex-direction: column;
+
+        .projectsHeader {
+
+            .BothSwiperArrows {
+                display: flex;
+                flex-direction: column;
+                background-color: #fff;
+                color: #161616;
+                width: 45px;
+                height: 45px;
+                text-align: center;
+                padding-top: 2vh;
+                position: relative;
+                top: 20vh;
+                right: 20vh;
+                border-radius: 6vh;
+                border: none;
+                cursor: pointer;
+                box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.05);
+                overflow: hidden;
+
+                &:hover {
+                    background-color: #ffcc7e;
+                }
+
+                &::after {
+                    content: "";
+                }
+
+                i {
+                    transition: transform 0.4s ease-in-out;
+
+                    &:nth-child(1) {
+                        padding-bottom: 20px;
+                        padding-top: 3px;
+                    }
+                }
+            }
+
+            .button-prev {
+                position: absolute;
+            }
+
+            .button-next {
+                position: absolute;
+                right: 10vh;
+
+                i {
+                    padding-left: 2px;
+                }
+            }
+        }
+        
+        .projectsMain {
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            width: 100%;
+
+            .projectsMain__Cards {
+                display: flex;
+                gap: 2vh;
+
+                .swiper-slide {
+                    width: 30%;
+
+                    img {
+                        width: 35vh;
+                        height: 35vh;
+                        object-fit: contain;
+                    }
+                }
+            }
+        }
+    }
+
+    #Partners {
+        flex-direction: column;
+        align-items: center;
+
+        .partnersHeader {
+            width: 100%;
+
+            ul {
+                overflow: hidden;
+    
+                li {
+    
+                    img {
+                        width: 15vh;
+                        height: 15vh;
+                        object-fit: contain;
+                    }
+                }
+            }
+        }
+
+        ul {
+            justify-content: space-between;
+            width: 100%;
+
+            li {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+        
+    }
+
+    #EducationAndExperience {
+
+
+    }
+
+    #Services {
+        flex-direction: column;
+        justify-content: center;
+
+        ul {
+            gap: 1vh;
+            flex-wrap: wrap;
+            
+            li {
+                flex-basis: 49%;
             }
         }
     }

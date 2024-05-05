@@ -2,11 +2,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
   background-color: black;
 }
 
 :root {
-  --cotton-candy-pink: #FF76CE;
+  --cotton-candy-pink: #ff76cf3d;
 }
 
 a {
@@ -15,7 +18,72 @@ a {
 }
 
 ul {
+  display: flex;
   list-style-type: none;
+}
+
+section {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border: 0.75px solid rgba(252, 252, 252, 0.05);
+  background-color: var(--cotton-candy-pink);
+}
+
+.sectionHeader {
+  display: flex;
+}
+
+.marqueeEffect {
+  display: flex;
+  -webkit-mask-image-: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 12.5%, rgb(0, 0, 0) 87.5%, rgba(0, 0, 0, 0) 100%);
+  animation: textanim 10s infinite linear;
+}
+
+div {
+  border: 0.75px solid rgba(252, 252, 252, 0.05);
+}
+
+.a-effect {
+  background-color: #f9cb7e;
+  color: #000;
+}
+
+.button-effect-inner,
+.button-effect-text {
+  display: inline-block;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.button-effect-inner {
+  height: 1.75em;
+  overflow: hidden;
+  position: relative;
+}
+
+.button-effect-text {
+  line-height: 2;
+  transition: transform 0.4s ease-out;
+}
+
+.button-effect-text::after {
+  content: attr(data-effect);
+  display: block;
+}
+
+.button-effect:hover {
+  background-color: #f9cb7e;
+  color: #000;
+}
+
+.a-effect:hover {
+  background-color: #161616;
+  color: #fff;
+}
+
+.button-effect:hover .button-effect-text {
+  transform: translateY(-50%);
 }
 
 header {
@@ -33,41 +101,41 @@ header {
   border: 0.75px solid rgba(252, 252, 252, 0.05);
   padding: 34px 28px 24px;
 }
-header #headerTop {
+header .headerTop {
   display: flex;
   flex-direction: column;
 }
-header #headerTop #headerTop__Top {
+header .headerTop .headerTop__Top {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   height: 100%;
 }
-header #headerTop #headerTop__Top a {
+header .headerTop .headerTop__Top a {
   display: flex;
   align-items: center;
   gap: 2vh;
 }
-header #headerTop #headerTop__Bottom {
+header .headerTop .headerTop__Bottom {
   display: flex;
   align-items: center;
   justify-content: space-around;
   padding: 27px 0 27px 27px;
 }
-header #headerTop #headerTop__Bottom img {
+header .headerTop .headerTop__Bottom img {
   width: 15vh;
   height: 15vh;
   -o-object-fit: contain;
      object-fit: contain;
 }
-header #headerTop #headerTop__Bottom #headerTop__BottomText {
+header .headerTop .headerTop__Bottom .headerTop__BottomText {
   display: flex;
   flex-direction: column;
   gap: 1vh;
   margin-top: 2vh;
 }
-header #headerTop #headerTop__Bottom #headerTop__BottomText span {
+header .headerTop .headerTop__Bottom .headerTop__BottomText span {
   display: flex;
   align-items: center;
   gap: 1vh;
@@ -91,13 +159,10 @@ header nav ul li a img {
 
 main {
   position: relative;
-  left: 80vh;
-  width: 50%;
+  left: 65vh;
+  width: 150vh;
   height: 100%;
   padding: 34px 28px 24px;
-}
-main #Intro {
-  display: flex;
 }
 main #Intro #hero {
   width: 35vh;
@@ -105,30 +170,155 @@ main #Intro #hero {
   -o-object-fit: contain;
      object-fit: contain;
 }
-main #Intro #introRight #introRight__Top #introRight__TopLeft {
+main #Intro .introRight {
+  width: 100%;
+}
+main #Intro .introRight .introRight__Top {
+  display: flex;
+  justify-content: space-between;
+}
+main #Intro .introRight .introRight__Top .introRight__TopLeft {
   display: flex;
   align-items: center;
   gap: 1vh;
 }
-main #Intro #introRight #introRight__Top #introRight__TopLeft a {
+main #Intro .introRight .introRight__Top .introRight__TopLeft a {
   display: flex;
   align-items: center;
   gap: 1vh;
 }
-main #Intro #introRight #introRight__Top #introRight__TopLeft a span {
+main #Intro .introRight .introRight__Top .introRight__TopLeft a span {
   width: 6px;
   height: 6px;
   background-color: #00A34C;
   border-radius: 50%;
 }
-main #Intro #introRight #introRight__Top #introRight__TopCenter {
+main #Intro .introRight .introRight__Top .introRight__TopCenter {
   display: flex;
   align-items: center;
   gap: 1vh;
 }
-main #Intro #introRight #introRight__Top #introRight__TopCenter i {
+main #Intro .introRight .introRight__Top .introRight__TopCenter i {
   color: white;
 }
-main #Intro #introRight #introRight__Top #introRight__TopCenter span {
+main #Intro .introRight .introRight__Top .introRight__TopCenter span {
   color: white;
+}
+main #Intro .introRight .introRight__Top .introRight__TopRight {
+  display: flex;
+}
+main #Intro .introRight .introRight__Bottom {
+  display: flex;
+}
+main #Intro .introRight .introRight__Bottom .introRight__BottomLeft {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+}
+main #Intro .introRight .introRight__Bottom .introRight__BottomRight {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+}
+main #Intro .introRight .introRight__Bottom .introRight__BottomRight .introRight__BottomRight__Top {
+  display: flex;
+  justify-content: space-between;
+}
+main .Projects {
+  flex-direction: column;
+}
+main .Projects .projectsHeader .BothSwiperArrows {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  color: #161616;
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  padding-top: 2vh;
+  position: relative;
+  top: 20vh;
+  right: 20vh;
+  border-radius: 6vh;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+main .Projects .projectsHeader .BothSwiperArrows:hover {
+  background-color: #ffcc7e;
+}
+main .Projects .projectsHeader .BothSwiperArrows::after {
+  content: "";
+}
+main .Projects .projectsHeader .BothSwiperArrows i {
+  transition: transform 0.4s ease-in-out;
+}
+main .Projects .projectsHeader .BothSwiperArrows i:nth-child(1) {
+  padding-bottom: 20px;
+  padding-top: 3px;
+}
+main .Projects .projectsHeader .button-prev {
+  position: absolute;
+}
+main .Projects .projectsHeader .button-next {
+  position: absolute;
+  right: 10vh;
+}
+main .Projects .projectsHeader .button-next i {
+  padding-left: 2px;
+}
+main .Projects .projectsMain {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  width: 100%;
+}
+main .Projects .projectsMain .projectsMain__Cards {
+  display: flex;
+  gap: 2vh;
+}
+main .Projects .projectsMain .projectsMain__Cards .swiper-slide {
+  width: 30%;
+}
+main .Projects .projectsMain .projectsMain__Cards .swiper-slide img {
+  width: 35vh;
+  height: 35vh;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+main #Partners {
+  flex-direction: column;
+  align-items: center;
+}
+main #Partners .partnersHeader {
+  width: 100%;
+}
+main #Partners .partnersHeader ul {
+  overflow: hidden;
+}
+main #Partners .partnersHeader ul li img {
+  width: 15vh;
+  height: 15vh;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+main #Partners ul {
+  justify-content: space-between;
+  width: 100%;
+}
+main #Partners ul li {
+  display: flex;
+  flex-direction: column;
+}
+main #Services {
+  flex-direction: column;
+  justify-content: center;
+}
+main #Services ul {
+  gap: 1vh;
+  flex-wrap: wrap;
+}
+main #Services ul li {
+  flex-basis: 49%;
 }/*# sourceMappingURL=style.css.map */
