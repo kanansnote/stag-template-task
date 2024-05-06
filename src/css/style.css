@@ -437,6 +437,9 @@ main #Intro .introRight .introRight__Bottom .introRight__BottomRight .introRight
 main .Projects {
   flex-direction: column;
 }
+main .Projects .marqueeEffect li:nth-child(2) {
+  margin-left: -4vh !important;
+}
 main .Projects .projectsMain {
   display: flex;
   flex-direction: column;
@@ -509,13 +512,55 @@ main .Partners .partnersMain__Info li {
   padding: 2vh;
   border: var(--main-element-border);
 }
-main #EducationAndExperience .sectionHeader {
+main #EducationAndExperience {
+  display: flex;
+  justify-content: space-between;
+  padding: 2vh;
+}
+main #EducationAndExperience .education, main #EducationAndExperience .experience {
+  width: 49%;
+  display: flex;
+  flex-direction: column;
+}
+main #EducationAndExperience .education .educationHeader, main #EducationAndExperience .education .experienceHeader, main #EducationAndExperience .experience .educationHeader, main #EducationAndExperience .experience .experienceHeader {
   width: -moz-max-content;
   width: max-content;
+  padding: 1vh 2vh 2vh;
+  margin: 2vh;
+  border: var(--main-element-border);
+}
+main #EducationAndExperience .education .educationHeader h4, main #EducationAndExperience .education .experienceHeader h4, main #EducationAndExperience .experience .educationHeader h4, main #EducationAndExperience .experience .experienceHeader h4 {
+  padding-top: 0.5vh;
+}
+main #EducationAndExperience .education .educationMain, main #EducationAndExperience .education .experienceMain, main #EducationAndExperience .experience .educationMain, main #EducationAndExperience .experience .experienceMain {
+  flex-direction: column;
+}
+main #EducationAndExperience .education .educationMain li, main #EducationAndExperience .education .experienceMain li, main #EducationAndExperience .experience .educationMain li, main #EducationAndExperience .experience .experienceMain li {
+  display: flex;
+}
+main #EducationAndExperience .education .educationMain li img, main #EducationAndExperience .education .experienceMain li img, main #EducationAndExperience .experience .educationMain li img, main #EducationAndExperience .experience .experienceMain li img {
+  width: 15vh;
+  height: 15vh;
+  padding: 2vh;
+  border-left: none;
+}
+main #EducationAndExperience .education .educationMain li .educationAndExperience__Text, main #EducationAndExperience .education .experienceMain li .educationAndExperience__Text, main #EducationAndExperience .experience .educationMain li .educationAndExperience__Text, main #EducationAndExperience .experience .experienceMain li .educationAndExperience__Text {
+  padding-left: 2vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-right: none;
+}
+main #EducationAndExperience .education .educationMain li .educationAndExperience__Text span, main #EducationAndExperience .education .experienceMain li .educationAndExperience__Text span, main #EducationAndExperience .experience .educationMain li .educationAndExperience__Text span, main #EducationAndExperience .experience .experienceMain li .educationAndExperience__Text span {
+  color: var(--light-gray-color);
 }
 main #Services {
   flex-direction: column;
   justify-content: center;
+}
+main #Services .serviceHeader .sectionHeader__Center {
+  width: 150%;
 }
 main #Services ul {
   gap: 1vh;
@@ -527,15 +572,68 @@ main #Services ul li {
 main #Stack {
   flex-direction: column;
 }
+main #Stack .sectionHeader__Center li:nth-child(2) {
+  margin-left: -43vh;
+}
 main #Stack .stackMain {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 3vh;
+  border: none;
 }
 main #Stack .stackMain .stackMain__Card {
   display: flex;
-  flex-basis: 48%;
+  flex-basis: 47.8%;
+  align-items: center;
+}
+main #Stack .stackMain .stackMain__Card img {
+  width: 15vh;
+  height: 15vh;
+  padding: 2vh;
+  border: none;
+}
+main #Stack .stackMain .stackMain__Card .stackMain__CardText {
+  display: flex;
+  flex-direction: column;
+  border: none;
+}
+main #Blog {
+  flex-direction: column;
+}
+main #Blog .sectionHeader__Center li:nth-child(2) {
+  margin-left: -46vh;
+}
+main #Blog .blogMain {
+  display: flex;
+  justify-content: space-between;
+  padding: 2vh;
+}
+main #Blog .blogMain a .blogMain__Card {
+  width: 100%;
+  padding: 2vh;
+  display: flex;
+  flex-direction: column;
+}
+main #Blog .blogMain a .blogMain__Card img {
+  width: 40vh;
+  height: 40vh;
+  border: none;
+}
+main #Blog .blogMain a .blogMain__Card .blogMain__CardTextAndArrow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: none;
+}
+main #Blog .blogMain a .blogMain__Card .blogMain__CardTextAndArrow .blogMain__CardTextAndArrow__Text {
+  display: flex;
+  flex-direction: column;
+  border: none;
+}
+main #Blog .blogMain a .blogMain__Card .blogMain__CardTextAndArrow .blogMain__CardTextAndArrow__Arrow {
+  display: flex;
+  border: none;
 }
 main .Testimonial {
   flex-direction: column;
@@ -620,4 +718,7 @@ main .GalleryPage .projectsPageMain__Cards .projectsPageMain__Card .projectsPage
 main .GalleryPage .galleryMain .projectsPageMain__Card .projectsPageMain__CardLink span {
   color: var(--light-gray-color);
   font-size: 13px;
+}
+main .GalleryPage .marqueeEffect li:nth-child(2) {
+  margin-left: -41vh !important;
 }/*# sourceMappingURL=style.css.map */

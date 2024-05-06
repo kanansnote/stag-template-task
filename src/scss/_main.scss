@@ -147,6 +147,10 @@ main {
 
     .Projects {
         flex-direction: column;
+
+        .marqueeEffect li:nth-child(2) {
+            margin-left: -4vh !important;
+        }
         
         .projectsMain {
             display: flex;
@@ -236,15 +240,66 @@ main {
     }
     
     #EducationAndExperience {
+        display: flex;
+        justify-content: space-between;
+        padding: 2vh;
+        
+        .education, .experience {
+            width: 49%;
+            display: flex;
+            flex-direction: column;
+            
+            .educationHeader, .experienceHeader {
+                width: max-content;
+                padding: 1vh 2vh 2vh;
+                margin: 2vh;
+                border: var(--main-element-border);
 
-        .sectionHeader {
-            width: max-content;
+                h4 {
+                    padding-top: 0.5vh;
+                }
+            }
+
+            .educationMain, .experienceMain {
+                flex-direction: column;
+                
+                li {
+                    display: flex;
+
+                    img {
+                        width: 15vh;
+                        height: 15vh;
+                        padding: 2vh;
+                        border-left: none;
+                    }
+                    
+                    .educationAndExperience__Text {
+                        padding-left: 2vh;
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        border-right: none;
+
+                        span {
+                            color: var(--light-gray-color);
+                        }
+                    }
+                }
+            }
         }
     }
 
     #Services {
         flex-direction: column;
         justify-content: center;
+
+        .serviceHeader {
+            
+            .sectionHeader__Center {
+                width: 150%;
+            }
+        }
 
         ul {
             gap: 1vh;
@@ -259,20 +314,85 @@ main {
     #Stack {
         flex-direction: column;
 
+        .sectionHeader__Center li:nth-child(2) {
+            margin-left: -43vh;
+        }
+
         .stackMain {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             gap: 3vh;
+            border: none;
             
             .stackMain__Card {
                 display: flex;
-                flex-basis: 48%;
+                flex-basis: 47.8%;
+                align-items: center;
+
+                img {
+                    width: 15vh;
+                    height: 15vh;
+                    padding: 2vh;
+                    border: none;
+                }
+
+                .stackMain__CardText {
+                    display: flex;
+                    flex-direction: column;
+                    border: none;
+                }
             }
         }
     }
 
-    #Blog {}
+    #Blog {
+        flex-direction: column;
+        
+        .sectionHeader__Center li:nth-child(2) {
+            margin-left: -46vh;
+        }
+
+        .blogMain {
+            display: flex;
+            justify-content: space-between;
+            padding: 2vh;
+
+            a {
+
+                .blogMain__Card {
+                    width: 100%;
+                    padding: 2vh;
+                    display: flex;
+                    flex-direction: column;
+
+                    img {
+                        width: 40vh;
+                        height: 40vh;
+                        border: none;
+                    }
+
+                    .blogMain__CardTextAndArrow {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        border: none;
+
+                        .blogMain__CardTextAndArrow__Text {
+                            display: flex;
+                            flex-direction: column;
+                            border: none;
+                        }
+
+                        .blogMain__CardTextAndArrow__Arrow {
+                            display: flex;
+                            border: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
 
     .Testimonial {
         flex-direction: column;

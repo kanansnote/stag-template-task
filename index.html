@@ -227,14 +227,13 @@
         </section>
         <section id="EducationAndExperience">
             <div class="education">
-
                 <div class="educationHeader sectionHeader">
                     <h4>Education</h4>
                 </div>
                 <ul class="educationMain">
                     <li>
                         <img src="./src/img/education-experience/edc-3.jpg" alt="">
-                        <div>
+                        <div class="educationAndExperience__Text">
                             <span>2020 - 2024</span>
                             <a href="#">Webflow Developer & Co-Founder</a>
                             <p>IBM Technologies</p>
@@ -242,7 +241,7 @@
                     </li>
                     <li>
                         <img src="./src/img/education-experience/edc-2.jpg" alt="">
-                        <div>
+                        <div class="educationAndExperience__Text">
                             <span>2017 - 2020</span>
                             <a href="#">Front-End Developer</a>
                             <p>Spotify</p>
@@ -250,7 +249,7 @@
                     </li>
                     <li>
                         <img src="./src/img/education-experience/edc-1.jpg" alt="">
-                        <div>
+                        <div class="educationAndExperience__Text">
                             <span>2007 - 2017</span>
                             <a href="#">Web Designer & Developer</a>
                             <p>Adobe Creative Cloud</p>
@@ -265,7 +264,7 @@
                 <ul class="experienceMain">
                     <li>
                         <img src="./src/img/education-experience/exp-3.png" alt="">
-                        <div>
+                        <div class="educationAndExperience__Text">
                             <span>2020 - 2024</span>
                             <a href="#">Cloud Development Operation</a>
                             <p>Mandro Studio</p>
@@ -273,7 +272,7 @@
                     </li>
                     <li>
                         <img src="./src/img/education-experience/exp-2.png" alt="">
-                        <div>
+                        <div class="educationAndExperience__Text">
                             <span>2017 - 2020</span>
                             <a href="#">Full Stack Developer</a>
                             <p>Larsen & Toubro</p>
@@ -281,7 +280,7 @@
                     </li>
                     <li>
                         <img src="./src/img/education-experience/exp-1.png" alt="">
-                        <div>
+                        <div class="educationAndExperience__Text">
                             <span>2007 - 2017</span>
                             <a href="#">Figma Designing & Prototyping</a>
                             <p>Bluebase Designs</p>
@@ -292,12 +291,15 @@
         </section>
         <section id="Services">
             <div class="serviceHeader sectionHeader">
-                <h4>Services</h4>
-                <ul class="marqueeEffect">
-                    <li>It is a long established fact that a reader will distracted by the readable content of a page when looking an its readable</li>
-                    <li>It is a long established fact that a reader will distracted by the readable content of a page when looking an its readable</li>
-                    <li>It is a long established fact that a reader will distracted by the readable content of a page when looking an its readable</li>
-                </ul>
+                <div class="sectionHeader__Left">
+                    <h4>Services</h4>
+                </div>
+                <div class="sectionHeader__Center">
+                    <ul class="marqueeEffect">
+                        <li>It is a long established fact that a reader will distracted by the readable content of a page when looking an its readable.</li>
+                        <li>It is a long established fact that a reader will distracted by the readable content of a page when looking an its readable.</li>
+                    </ul>
+                </div>
             </div>
             <ul>
                 <li class="serviceCard">
@@ -364,12 +366,15 @@
         </section>
         <section id="Stack">
             <div class="stackHeader sectionHeader">
-                <h4>Stack</h4>
-                <ul class="marqueeEffect">
-                    <li>It is a long established fact that a reader will distracted by the readable content of a page when looking an its readable</li>
-                    <li>It is a long established fact that a reader will distracted by the readable content of a page when looking an its readable</li>
-                    <li>It is a long established fact that a reader will distracted by the readable content of a page when looking an its readable</li>
-                </ul>
+                <div class="sectionHeader__Left">
+                    <h4>Stack</h4>
+                </div>
+                <div class="sectionHeader__Center">
+                    <ul class="marqueeEffect">
+                        <li>It is a long established fact that a reader will distracted by the readable content of a page when looking an its readable.</li>
+                        <li>It is a long established fact that a reader will distracted by the readable content of a page when looking an its readable.</li>
+                    </ul>
+                </div>
             </div>
             <div class="stackMain">
                 <div class="stackMain__Card">
@@ -418,50 +423,59 @@
         </section>
         <section id="Blog">
             <div class="blogHeader sectionHeader">
-                <a href="#" class="button-effect">
-                    <span class="button-effect-inner">
-                        <span class="button-effect-text" data-effect="Blog">Blog</span>
-                    </span>
-                </a>
-                <ul class="marqueeEffect">
-                    <li>It is a long established fact that a reader will distracted by the readable content of a page when looking an its readable</li>
-                    <li>It is a long established fact that a reader will distracted by the readable content of a page when looking an its readable</li>
-                    <li>It is a long established fact that a reader will distracted by the readable content of a page when looking an its readable</li>
-                </ul>
+                <div class="sectionHeader__Left">
+                    <a href="#" class="button-effect">
+                        <span class="button-effect-inner">
+                            <span class="button-effect-text" data-effect="Blog">Blog</span>
+                        </span>
+                    </a>
+                </div>
+                <div class="sectionHeader__Center">
+                    <ul class="marqueeEffect">
+                        <li>It is a long established fact that a reader will distracted by the readable content of a page when looking an its readable.</li>
+                        <li>It is a long established fact that a reader will distracted by the readable content of a page when looking an its readable.</li>
+                    </ul>
+                </div>
             </div>
             <div class="blogMain">
                 <a href="https://wpriverthemes.com/HTML/stag/blog-detail.html">
                     <div class="blogMain__Card">
-                        <img src="" alt="">
-                        <div class="blogMain__CardText">
-                            <h4>Retro Remix</h4>
-                            <p>UX Design</p>
-                            <div class="blogMain__CardText__Arrow">
-                                <i></i>
+                        <img src="./src/img/blog/blog-1.png" alt="Blog Image 1">
+                        <div class="blogMain__CardTextAndArrow">
+                            <div class="blogMain__CardTextAndArrow__Text">
+                                <h4>Retro Remix</h4>
+                                <p>UX Design</p>
+                            </div>
+                            <div class="blogMain__CardTextAndArrow__Arrow">
+                                <i class="fa-solid fa-angle-right"></i>
                             </div>
                         </div>
                     </div>
                 </a>
                 <a href="https://wpriverthemes.com/HTML/stag/blog-detail.html">
                     <div class="blogMain__Card">
-                        <img src="" alt="">
-                        <div class="blogMain__CardText">
-                            <h4>Mystical Meodows</h4>
-                            <p>Web Development</p>
-                            <div class="blogMain__CardText__Arrow">
-                                <i></i>
+                        <img src="./src/img/blog/blog-2.png" alt="Blog Image 2">
+                        <div class="blogMain__CardTextAndArrow">
+                            <div class="blogMain__CardTextAndArrow__Text">
+                                <h4>Mystical Meodows</h4>
+                                <p>Web Development</p>
+                            </div>
+                            <div class="blogMain__CardTextAndArrow__Arrow">
+                                <i class="fa-solid fa-angle-right"></i>
                             </div>
                         </div>
                     </div>
                 </a>
                 <a href="https://wpriverthemes.com/HTML/stag/blog-detail.html">
                     <div class="blogMain__Card">
-                        <img src="" alt="">
-                        <div class="blogMain__CardText">
-                            <h4>Cybernetic Dreams</h4>
-                            <p>Brand Marketing</p>
-                            <div class="blogMain__CardText__Arrow">
-                                <i></i>
+                        <img src="./src/img/blog/blog-3.png" alt="Blog Image 3">
+                        <div class="blogMain__CardTextAndArrow">
+                            <div class="blogMain__CardTextAndArrow__Text">
+                                <h4>Cybernetic Dreams</h4>
+                                <p>Brand Marketing</p>
+                            </div>
+                            <div class="blogMain__CardTextAndArrow__Arrow">
+                                <i class="fa-solid fa-angle-right"></i>
                             </div>
                         </div>
                     </div>
