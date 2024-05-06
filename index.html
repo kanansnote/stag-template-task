@@ -13,7 +13,7 @@
     <header>
         <div class="headerTop">
             <div class="headerTop__Top">
-                <a href="">
+                <a href="index.html">
                     <img src="./src/img/header/logo.svg" alt="">
                     <span>STAG</span>
                 </a>
@@ -31,7 +31,7 @@
         <nav>
             <ul>
                 <li><a href="#"><i class="fa-solid fa-house"></i>Home</a></li>
-                <li><a href="#"><img src="./src/img/header/apps-large-solid-svgrepo-com.svg" alt="">Projects</a></li>
+                <li><a id="projectsLinkIcon" href="#"><img src="./src/img/header/apps-large-solid-svgrepo-com.svg" alt="">Projects</a></li>
                 <li><a href="#"><i class="fa-solid fa-fingerprint"></i>About</a></li>
                 <li><a href="#"><i class="fa-solid fa-camera"></i>Gallery</a></li>
                 <li><a href="#"><i class="fa-solid fa-paperclip"></i>Contact</a></li>
@@ -55,9 +55,9 @@
                         <span>Thursday, 2 May, 2024</span>
                     </div>
                     <div class="introRight__TopRight">
-                        <a href="#" class="button-effect a-effect">
+                        <a href="#" class="button-effect">
                             <span class="button-effect-inner">
-                                <span class="button-effect-text" data-effect="Contact Me">Contact Me</span>
+                                <span class="button-effect-text" data-effect="Contact Me ↗">Contact Me ↗</span>
                             </span>
                         </a>
                     </div>
@@ -81,106 +81,122 @@
         </section>
         <section class="Projects swiper-container">
             <div class="projectsHeader sectionHeader">
-                <a href="#" class="button-effect a-effect">
-                    <span class="button-effect-inner">
-                        <span class="button-effect-text" data-effect="Projects">Projects</span>
-                    </span>
-                </a>
-                <ul class="marqueeEffect">
-                    <li>It is a long established fact that a reader will distracted by the readable content of a page when looking an its readable</li>
-                    <li>It is a long established fact that a reader will distracted by the readable content of a page when looking an its readable</li>
-                    <li>It is a long established fact that a reader will distracted by the readable content of a page when looking an its readable</li>
-                </ul>
-                <div class="button-prev BothSwiperArrows">
-                    <i class="fa-solid fa-angle-left"></i>
+                <div class="projectsHeader__Left sectionHeader__Left">
+                    <a href="#" class="button-effect">
+                        <span class="button-effect-inner">
+                            <span class="button-effect-text" data-effect="Projects">Projects</span>
+                        </span>
+                    </a>
                 </div>
-                <div class="button-next BothSwiperArrows">
-                    <i class="fa-solid fa-angle-right"></i>
+                <div class="projectsHeader__Center sectionHeader__Center">
+                    <ul class="marqueeEffect">
+                        <li>It is a long established fact that a reader will distracted by the readable content of a page when looking an its readable.</li>
+                        <li>It is a long established fact that a reader will distracted by the readable content of a page when looking an its readable.</li>
+                    </ul>
+                </div>
+                <div class="projectsHeader__Right sectionHeader__Right">
+                    <div class="button-prev BothSwiperArrows">
+                        <i class="fa-solid fa-angle-left"></i>
+                    </div>
+                    <div class="button-next BothSwiperArrows">
+                        <i class="fa-solid fa-angle-right"></i>
+                    </div>
                 </div>
             </div>
-            <div class="projectsMain projectsMain1">
+            <div class="projectsMain projectsMain1 sectionMainMargin">
                 <div class="projectsMain__Cards swiper-wrapper">
-                    <div class="swiper-slide">
+                    <div class="projectsMain__Card swiper-slide">
                         <img src="./src/img/projects/project-1.png" alt="Projects Image 1">
-                        <div>
+                        <div class="projectsMain__CardLink">
                             <a href="https://wpriverthemes.com/HTML/stag/project-detail.html">Retro Remix
-                                <span>UX Design</span>
+                                <i class="fa-solid fa-angle-right"></i>
                             </a>
+                            <span>UX Design</span>
                         </div>
                     </div>
-                    <div class="swiper-slide">
+                    <div class="projectsMain__Card swiper-slide">
                         <img src="./src/img/projects/project-2.png" alt="Projects Image 2">
-                        <div>
+                        <div class="projectsMain__CardLink">
                             <a href="https://wpriverthemes.com/HTML/stag/project-detail.html">Mystical Meodows
-                                <span>Web Development</span>
+                                <i class="fa-solid fa-angle-right"></i>
                             </a>
+                            <span>Web Development</span>
                         </div>
                     </div>
-                    <div class="swiper-slide">
+                    <div class="projectsMain__Card swiper-slide">
                         <img src="./src/img/projects/project-3.png" alt="Projects Image 3">
-                        <div>
+                        <div class="projectsMain__CardLink">
                             <a href="https://wpriverthemes.com/HTML/stag/project-detail.html">Cybernetic Dreams
-                                <span>Brand Marketing</span>
+                                <i class="fa-solid fa-angle-right"></i>
                             </a>
+                            <span>Brand Marketing</span>
                         </div>
                     </div>
-                    <div class="swiper-slide">
+                    <div class="projectsMain__Card swiper-slide">
                         <img src="./src/img/projects/project-1.png" alt="Projects Image 1">
-                        <div>
+                        <div class="projectsMain__CardLink">
                             <a href="https://wpriverthemes.com/HTML/stag/project-detail.html">Retro Remix
-                                <span>UX Design</span>
+                                <i class="fa-solid fa-angle-right"></i>
                             </a>
+                            <span>UX Design</span>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="projectsMain projectsMain2">
+            <div class="projectsMain projectsMain2 sectionMainMargin">
                 <div class="projectsMain__Cards swiper-wrapper">
-                    <div class="swiper-slide">
+                    <div class="projectsMain__Card swiper-slide">
                         <img src="./src/img/projects/project-4.png" alt="Projects Image 4">
-                        <div>
+                        <div class="projectsMain__CardLink">
                             <a href="https://wpriverthemes.com/HTML/stag/project-detail.html">Light PLay
-                                <span>SEO</span>
+                                <i class="fa-solid fa-angle-right"></i>
                             </a>
+                            <span>SEO</span>
                         </div>
                     </div>
-                    <div class="swiper-slide">
+                    <div class="projectsMain__Card swiper-slide">
                         <img src="./src/img/projects/project-5.png" alt="Projects Image 5">
-                        <div>
+                        <div class="projectsMain__CardLink">
                             <a href="https://wpriverthemes.com/HTML/stag/project-detail.html">Synthwave Sympony
-                                <span>Social Media</span>
+                                <i class="fa-solid fa-angle-right"></i>
                             </a>
+                            <span>Social Media</span>
                         </div>
                     </div>
-                    <div class="swiper-slide">
+                    <div class="projectsMain__Card swiper-slide">
                         <img src="./src/img/projects/project-6.png" alt="Projects Image 6">
-                        <div>
+                        <div class="projectsMain__CardLink">
                             <a href="https://wpriverthemes.com/HTML/stag/project-detail.html">Mindscapes
-                                <span>Robotic Automation</span>
+                                <i class="fa-solid fa-angle-right"></i>
                             </a>
+                            <span>Robotic Automation</span>
                         </div>
                     </div>
-                    <div class="swiper-slide">
+                    <div class="projectsMain__Card swiper-slide">
                         <img src="./src/img/projects/project-1.png" alt="Projects Image 1">
-                        <div>
+                        <div class="projectsMain__CardLink">
                             <a href="https://wpriverthemes.com/HTML/stag/project-detail.html">Light Play
-                                <span>SEO</span>
+                                <i class="fa-solid fa-angle-right"></i>
                             </a>
+                            <span>SEO</span>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="Partners">
+        <section class="Partners">
             <div class="partnersHeader sectionHeader">
-                <h4>Partners</h4>
-                <ul class="marqueeEffect">
-                    <li>It is a long established fact that a reader will distracted by the readable content of a page when looking an its readable</li>
-                    <li>It is a long established fact that a reader will distracted by the readable content of a page when looking an its readable</li>
-                    <li>It is a long established fact that a reader will distracted by the readable content of a page when looking an its readable</li>
-                </ul>
+                <div class="sectionHeader__Left">
+                    <h4>Partners</h4>
+                </div>
+                <div class="sectionHeader__Center">
+                    <ul class="marqueeEffect">
+                        <li>It is a long established fact that a reader will distracted by the readable content of a page when looking an its readable.</li>
+                        <li>It is a long established fact that a reader will distracted by the readable content of a page when looking an its readable.</li>
+                    </ul>
+                </div>
             </div>
-            <ul>
+            <ul class="partnersMain__Images marqueeEffect">
                 <li><img src="./src/img/partners/client-1.png" alt="Client 1"></li>
                 <li><img src="./src/img/partners/client-2.png" alt="Client 2"></li>
                 <li><img src="./src/img/partners/client-3.png" alt="Client 3"></li>
@@ -194,7 +210,7 @@
                 <li><img src="./src/img/partners/client-5.png" alt="Client 5"></li>
                 <li><img src="./src/img/partners/client-6.png" alt="Client 6"></li>
             </ul>
-            <ul>
+            <ul class="partnersMain__Info">
                 <li>
                     <h2>12+</h2>
                     <p>Years of experience</p>
@@ -391,7 +407,7 @@
         </section>
         <section id="Blog">
             <div class="blogHeader sectionHeader">
-                <a href="#" class="button-effect a-effect">
+                <a href="#" class="button-effect">
                     <span class="button-effect-inner">
                         <span class="button-effect-text" data-effect="Blog">Blog</span>
                     </span>
