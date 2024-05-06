@@ -77,6 +77,9 @@ section {
   height: 100%;
   font-size: 14px;
 }
+.sectionHeader .sectionHeader__Left h4 {
+  padding-top: 1vh;
+}
 .sectionHeader .sectionHeader__Center {
   overflow: hidden;
   display: flex;
@@ -111,7 +114,10 @@ section {
   padding: 2vh;
   color: var(--off-white-color);
   flex-shrink: 0;
-  width: 100%;
+  width: 150%;
+}
+.sectionHeader .sectionHeader__Center .marqueeEffect li:nth-child(2) {
+  margin-left: -39vh;
 }
 .sectionHeader .sectionHeader__Right {
   border: none;
@@ -475,18 +481,19 @@ main .Partners {
 main .Partners .partnersMain__Images {
   border: var(--main-element-border);
   padding: 2vh;
+  margin: 2vh;
   overflow: hidden;
-  width: 100%;
+  width: 97.3%;
 }
 main .Partners .partnersMain__Images li {
-  width: 25vh;
-  height: 10vh;
-  margin: 2vh;
+  margin: 1vh;
+  height: 100%;
 }
 main .Partners .partnersMain__Images li img {
+  animation: marquee 10s infinite linear;
   padding: 2vh;
-  width: 17vh;
-  height: 17vh;
+  width: 25vh;
+  height: 15vh;
 }
 main .Partners .partnersMain__Info {
   justify-content: space-between;
@@ -496,6 +503,15 @@ main .Partners .partnersMain__Info {
 main .Partners .partnersMain__Info li {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  margin: 2vh;
+  width: 20vw;
+  padding: 2vh;
+  border: var(--main-element-border);
+}
+main #EducationAndExperience .sectionHeader {
+  width: -moz-max-content;
+  width: max-content;
 }
 main #Services {
   flex-direction: column;
@@ -538,4 +554,70 @@ main .Testimonial ul .testimonialCard .testimonialCard__Top {
 main .Testimonial ul .testimonialCard .testimonialCard__Top .testimonialCard__TopText {
   display: flex;
   flex-direction: column;
+}
+
+main .ProjectsPage,
+main .GalleryPage {
+  flex-direction: column;
+}
+main .ProjectsPage .projectsPageMain__Cards,
+main .ProjectsPage .galleryMain,
+main .GalleryPage .projectsPageMain__Cards,
+main .GalleryPage .galleryMain {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1vh;
+  margin: 2vh;
+}
+main .ProjectsPage .projectsPageMain__Cards .galleryImage,
+main .ProjectsPage .galleryMain .galleryImage,
+main .GalleryPage .projectsPageMain__Cards .galleryImage,
+main .GalleryPage .galleryMain .galleryImage {
+  width: 30vh;
+  height: 35vh;
+  padding: 1vh;
+  margin: 2vh;
+}
+main .ProjectsPage .projectsPageMain__Cards .projectsPageMain__Card,
+main .ProjectsPage .galleryMain .projectsPageMain__Card,
+main .GalleryPage .projectsPageMain__Cards .projectsPageMain__Card,
+main .GalleryPage .galleryMain .projectsPageMain__Card {
+  width: 45vh;
+  padding: 1vh;
+  margin: 1vh;
+}
+main .ProjectsPage .projectsPageMain__Cards .projectsPageMain__Card img,
+main .ProjectsPage .galleryMain .projectsPageMain__Card img,
+main .GalleryPage .projectsPageMain__Cards .projectsPageMain__Card img,
+main .GalleryPage .galleryMain .projectsPageMain__Card img {
+  width: 40vh;
+  height: 40vh;
+  padding-left: 2vh;
+  border: none;
+}
+main .ProjectsPage .projectsPageMain__Cards .projectsPageMain__Card .projectsPageMain__CardLink,
+main .ProjectsPage .galleryMain .projectsPageMain__Card .projectsPageMain__CardLink,
+main .GalleryPage .projectsPageMain__Cards .projectsPageMain__Card .projectsPageMain__CardLink,
+main .GalleryPage .galleryMain .projectsPageMain__Card .projectsPageMain__CardLink {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  padding: 0vh 2vh 3vh;
+}
+main .ProjectsPage .projectsPageMain__Cards .projectsPageMain__Card .projectsPageMain__CardLink a,
+main .ProjectsPage .galleryMain .projectsPageMain__Card .projectsPageMain__CardLink a,
+main .GalleryPage .projectsPageMain__Cards .projectsPageMain__Card .projectsPageMain__CardLink a,
+main .GalleryPage .galleryMain .projectsPageMain__Card .projectsPageMain__CardLink a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 98%;
+}
+main .ProjectsPage .projectsPageMain__Cards .projectsPageMain__Card .projectsPageMain__CardLink span,
+main .ProjectsPage .galleryMain .projectsPageMain__Card .projectsPageMain__CardLink span,
+main .GalleryPage .projectsPageMain__Cards .projectsPageMain__Card .projectsPageMain__CardLink span,
+main .GalleryPage .galleryMain .projectsPageMain__Card .projectsPageMain__CardLink span {
+  color: var(--light-gray-color);
+  font-size: 13px;
 }/*# sourceMappingURL=style.css.map */

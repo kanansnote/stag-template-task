@@ -200,18 +200,19 @@ main {
         .partnersMain__Images {
             border: var(--main-element-border);
             padding: 2vh;
+            margin: 2vh;
             overflow: hidden;
-            width: 100%;
+            width: 97.3%;
             
             li {
-                width: 25vh;
-                height: 10vh;
-                margin: 2vh;
+                margin: 1vh;
+                height: 100%;
                 
                 img {
+                    animation: marquee 10s infinite linear;
                     padding: 2vh;
-                    width: 17vh;
-                    height: 17vh;
+                    width: 25vh;
+                    height: 15vh;
                 }
             }
         }
@@ -220,10 +221,15 @@ main {
             justify-content: space-between;
             width: 100%;
             gap: 5vh;
-
+            
             li {
                 display: flex;
                 flex-direction: column;
+                align-items: flex-start;
+                margin: 2vh;
+                width: 20vw;
+                padding: 2vh;
+                border: var(--main-element-border);
             }
         }
         
@@ -231,7 +237,9 @@ main {
     
     #EducationAndExperience {
 
-
+        .sectionHeader {
+            width: max-content;
+        }
     }
 
     #Services {

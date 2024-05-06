@@ -1,0 +1,55 @@
+main {
+
+    .ProjectsPage,
+    .GalleryPage {
+        flex-direction: column;
+
+        .projectsPageMain__Cards,
+        .galleryMain {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1vh;
+            margin: 2vh;
+
+            .galleryImage {
+                width: 30vh;
+                height: 35vh;
+                padding: 1vh;
+                margin: 2vh;
+            }
+
+            .projectsPageMain__Card {
+                width: 45vh;
+                padding: 1vh;
+                margin: 1vh;
+
+                img {
+                    width: 40vh;
+                    height: 40vh;
+                    padding-left: 2vh;
+                    border: none;
+                }
+
+                .projectsPageMain__CardLink {
+                    display: flex;
+                    flex-direction: column;
+                    border: none;
+                    padding: 0vh 2vh 3vh;
+                    
+                    a {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        width: 98%;
+                    }
+    
+                    span {
+                        color: var(--light-gray-color);
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+}

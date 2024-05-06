@@ -1,5 +1,3 @@
-// Slider for .Projects section using swiper.js
-
 const projectsSwiper1 = new Swiper('.projectsMain1', {
     slidesPerView: '3', // Adjust this value to control how many slides are visible at a time
     navigation: {
