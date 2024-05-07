@@ -637,6 +637,7 @@ main #Blog .blogMain a .blogMain__Card .blogMain__CardTextAndArrow .blogMain__Ca
 }
 main .Testimonial {
   flex-direction: column;
+  overflow: hidden;
 }
 main .Testimonial ul {
   display: flex;
@@ -649,9 +650,30 @@ main .Testimonial ul .testimonialCard {
 main .Testimonial ul .testimonialCard .testimonialCard__Top {
   display: flex;
 }
+main .Testimonial ul .testimonialCard .testimonialCard__Top img {
+  width: 10vh;
+  height: 10vh;
+}
 main .Testimonial ul .testimonialCard .testimonialCard__Top .testimonialCard__TopText {
   display: flex;
   flex-direction: column;
+}
+main .Gallery {
+  flex-direction: column;
+  overflow: hidden;
+}
+main .Gallery .swiper-wrapper {
+  width: 100%;
+}
+main .Gallery .swiper-wrapper .swiper-slide {
+  width: 25vh;
+}
+main #Contact {
+  flex-direction: column;
+}
+main #Contact form input {
+  padding: 17px 13px;
+  margin-bottom: 24px;
 }
 
 main .ProjectsPage,

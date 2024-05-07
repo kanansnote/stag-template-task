@@ -396,6 +396,7 @@ main {
 
     .Testimonial {
         flex-direction: column;
+        overflow: hidden;
         
         ul {
             display: flex;
@@ -408,11 +409,44 @@ main {
                 .testimonialCard__Top {
                     display: flex;
 
+                    img {
+                        width: 10vh;
+                        height: 10vh;
+                    }
+
                     .testimonialCard__TopText {
                         display: flex;
                         flex-direction: column;
                     }
                 }
+            }
+        }
+    }
+
+    .Gallery {
+        flex-direction: column;
+        overflow: hidden;
+        
+        .swiper-wrapper {
+            width: 100%;
+            
+            .swiper-slide {
+                width: 25vh;
+            }
+        }
+    }
+
+    #Contact {
+        flex-direction: column;
+
+
+        form {
+
+            input {
+
+                padding: 17px 13px;
+                margin-bottom: 24px;
+                
             }
         }
     }
