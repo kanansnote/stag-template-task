@@ -31,3 +31,21 @@ const gallerySwiper = new Swiper('.Gallery', {
     disableOnInteraction: false, // Continue autoplay after user interactions
   },
 });
+
+document.addEventListener("scroll", function() {
+  const scrollPosition = window.scrollY;
+  const targetElements = document.querySelectorAll('body, a, i');
+
+  const threshold = 1700;
+
+  targetElements.forEach(element => {
+    if (scrollPosition > threshold) {
+      element.style.color = 'black';
+      element.style.transition = '0.5s ease-in-out';
+    } else {
+      element.style.color = '#f9f9f9';
+      element.style.transition = '0.5s ease-in-out';
+    }
+  });
+});
+

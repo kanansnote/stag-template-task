@@ -16,16 +16,15 @@ body {
 :root {
     --cotton-candy-pink: #ff76cf;
     --cotton-candy-pink-shade: #ff76cf3d;
-    --light-gray-color: #bcbcbcb3;
     --off-white-color: #f9f9f9;
     --main-element-border: .75px solid rgba(255, 255, 255, 0.308);
 }
 
 a {
     text-decoration: none;
-    color: white;
     width: max-content;
     font-weight: 400;
+    color: var(--off-white-color);
 }
 
 ul {
@@ -38,12 +37,10 @@ span {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: var(--off-white-color);
     font-weight: 500;
 }
 
 p {
-    color: var(--off-white-color);
     font-weight: 300;
 }
 
@@ -122,7 +119,6 @@ section {
 
             li {
                 padding: 2vh;
-                color: var(--off-white-color);
                 flex-shrink: 0;
                 width: 150%;
 
@@ -142,7 +138,6 @@ section {
         .BothSwiperArrows {
             display: flex;
             flex-direction: column;
-            color: var(--light-gray-color);
             width: 45px;
             height: 45px;
             text-align: center;

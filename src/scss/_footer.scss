@@ -1,3 +1,14 @@
 footer {
-    
+    position: relative;
+    left: 65vh;
+    width: 150vh;
+    height: 100%;
+    padding: 3.1vh 1vh;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+
+    div {
+        border: none;
+    }
 }

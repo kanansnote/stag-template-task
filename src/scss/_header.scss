@@ -7,7 +7,6 @@ header {
     top: 18px;
     width: 353px;
     height: 96vh;
-    color: #fff;
     border-color: rgba(49, 53, 55, 0.05);
     background-color: var(--cotton-candy-pink-shade);
     border: var(--main-element-border);
@@ -75,21 +74,16 @@ header {
                 a {
                     display: flex;
                     align-items: center;
-                    gap: 1vh;
-                    color: white;
+                    gap: 1.5vh;
                     width: 100%;
                     border: var(--main-element-border);
                     padding: 2vh;
-                }
-                
-                #projectsLinkIcon {
-                    padding-left: 0.82vh;
-                    
-                    img {
+
+                    i {
                         width: 3vh;
                         height: 3vh;
-                        border: none;
-                        margin-left: 1vh;
+                        text-align: center;
+                        padding: 1px;
                     }
                 }
             }

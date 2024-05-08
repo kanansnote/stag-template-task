@@ -14,17 +14,16 @@ body {
 :root {
   --cotton-candy-pink: #ff76cf;
   --cotton-candy-pink-shade: #ff76cf3d;
-  --light-gray-color: #bcbcbcb3;
   --off-white-color: #f9f9f9;
   --main-element-border: .75px solid rgba(255, 255, 255, 0.308);
 }
 
 a {
   text-decoration: none;
-  color: white;
   width: -moz-max-content;
   width: max-content;
   font-weight: 400;
+  color: var(--off-white-color);
 }
 
 ul {
@@ -37,12 +36,10 @@ span {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: var(--off-white-color);
   font-weight: 500;
 }
 
 p {
-  color: var(--off-white-color);
   font-weight: 300;
 }
 
@@ -112,7 +109,6 @@ section {
 }
 .sectionHeader .sectionHeader__Center .marqueeEffect li {
   padding: 2vh;
-  color: var(--off-white-color);
   flex-shrink: 0;
   width: 150%;
 }
@@ -128,7 +124,6 @@ section {
 .sectionHeader .sectionHeader__Right .BothSwiperArrows {
   display: flex;
   flex-direction: column;
-  color: var(--light-gray-color);
   width: 45px;
   height: 45px;
   text-align: center;
@@ -235,7 +230,6 @@ header {
   top: 18px;
   width: 353px;
   height: 96vh;
-  color: #fff;
   border-color: rgba(49, 53, 55, 0.05);
   background-color: var(--cotton-candy-pink-shade);
   border: var(--main-element-border);
@@ -293,20 +287,16 @@ header nav ul {
 header nav ul li a {
   display: flex;
   align-items: center;
-  gap: 1vh;
-  color: white;
+  gap: 1.5vh;
   width: 100%;
   border: var(--main-element-border);
   padding: 2vh;
 }
-header nav ul li #projectsLinkIcon {
-  padding-left: 0.82vh;
-}
-header nav ul li #projectsLinkIcon img {
+header nav ul li a i {
   width: 3vh;
   height: 3vh;
-  border: none;
-  margin-left: 1vh;
+  text-align: center;
+  padding: 1px;
 }
 
 main {
@@ -403,7 +393,6 @@ main #Intro .introRight .introRight__Bottom .introRight__BottomLeft {
   gap: 1vh;
 }
 main #Intro .introRight .introRight__Bottom .introRight__BottomLeft span {
-  color: var(--light-gray-color);
   font-size: 14px;
 }
 main #Intro .introRight .introRight__Bottom .introRight__BottomLeft h1 {
@@ -438,10 +427,13 @@ main .Projects {
   flex-direction: column;
 }
 main .Projects span {
-  width: 11vh;
+  width: 100%;
 }
 main .Projects .marqueeEffect li:nth-child(2) {
   margin-left: -4vh !important;
+}
+main .Projects .projectsHeader__Left {
+  width: 38vh;
 }
 main .Projects .projectsHeader__Center .marqueeEffect li {
   width: 155%;
@@ -480,7 +472,6 @@ main .Projects .projectsMain .projectsMain__Cards .projectsMain__Card .projectsM
   width: 98%;
 }
 main .Projects .projectsMain .projectsMain__Cards .projectsMain__Card .projectsMain__CardLink span {
-  color: var(--light-gray-color);
   font-size: 13px;
 }
 main .Partners {
@@ -558,9 +549,6 @@ main #EducationAndExperience .education .educationMain li .educationAndExperienc
   justify-content: center;
   border-right: none;
 }
-main #EducationAndExperience .education .educationMain li .educationAndExperience__Text span, main #EducationAndExperience .education .experienceMain li .educationAndExperience__Text span, main #EducationAndExperience .experience .educationMain li .educationAndExperience__Text span, main #EducationAndExperience .experience .experienceMain li .educationAndExperience__Text span {
-  color: var(--light-gray-color);
-}
 main #Services {
   flex-direction: column;
   justify-content: center;
@@ -582,7 +570,6 @@ main #Services #serviceCards .serviceCard {
 }
 main #Services #serviceCards .serviceCard span {
   margin: 2vh;
-  color: var(--light-gray-color);
   font-size: 14px;
 }
 main #Services #serviceCards .serviceCard .serviceCard__TextAndImage {
@@ -701,6 +688,7 @@ main .Testimonial .swiper-wrapper .testimonialCard {
 }
 main .Testimonial .swiper-wrapper .testimonialCard .testimonialCard__Top {
   display: flex;
+  border: none;
 }
 main .Testimonial .swiper-wrapper .testimonialCard .testimonialCard__Top img {
   width: 10vh;
@@ -710,10 +698,15 @@ main .Testimonial .swiper-wrapper .testimonialCard .testimonialCard__Top .testim
   width: 100%;
   display: flex;
   justify-content: space-between;
+  border: none;
 }
 main .Testimonial .swiper-wrapper .testimonialCard .testimonialCard__Top .testimonialCard__TopTextWithImage .testimonialCard__TopText {
   display: flex;
   flex-direction: column;
+  gap: 1vh;
+  padding-left: 2vh;
+  padding-top: 0.5vh;
+  width: 100%;
 }
 main .Gallery {
   flex-direction: column;
@@ -795,6 +788,20 @@ main #Contact .contactMain .contactInfo .contactInfo__Cards .contactInfo__Card .
   flex-direction: column;
   padding: 2vh;
   width: 100%;
+}
+
+footer {
+  position: relative;
+  left: 65vh;
+  width: 150vh;
+  height: 100%;
+  padding: 3.1vh 1vh;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+}
+footer div {
+  border: none;
 }
 
 main .ProjectsPage,
