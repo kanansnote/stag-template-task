@@ -8,7 +8,7 @@
 }
 
 body {
-  background-color: black;
+  background: linear-gradient(180deg, #3A1C71 0%, #e0be25 100%);
 }
 
 :root {
@@ -16,7 +16,7 @@ body {
   --cotton-candy-pink-shade: #ff76cf3d;
   --light-gray-color: #bcbcbcb3;
   --off-white-color: #f9f9f9;
-  --main-element-border: .75px solid rgba(252, 252, 252, 0.05);
+  --main-element-border: .75px solid rgba(255, 255, 255, 0.308);
 }
 
 a {
@@ -42,7 +42,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p {
-  color: var(--light-gray-color);
+  color: var(--off-white-color);
   font-weight: 300;
 }
 
@@ -437,8 +437,14 @@ main #Intro .introRight .introRight__Bottom .introRight__BottomRight .introRight
 main .Projects {
   flex-direction: column;
 }
+main .Projects span {
+  width: 11vh;
+}
 main .Projects .marqueeEffect li:nth-child(2) {
   margin-left: -4vh !important;
+}
+main .Projects .projectsHeader__Center .marqueeEffect li {
+  width: 155%;
 }
 main .Projects .projectsMain {
   display: flex;
@@ -562,12 +568,43 @@ main #Services {
 main #Services .serviceHeader .sectionHeader__Center {
   width: 150%;
 }
-main #Services ul {
-  gap: 1vh;
+main #Services #serviceCards {
   flex-wrap: wrap;
+  justify-content: center;
+  margin: 1.1vh;
 }
-main #Services ul li {
+main #Services #serviceCards .serviceCard {
   flex-basis: 49%;
+  border: var(--main-element-border);
+  margin: 4px;
+  gap: 2vh;
+  height: 15vh;
+}
+main #Services #serviceCards .serviceCard span {
+  margin: 2vh;
+  color: var(--light-gray-color);
+  font-size: 14px;
+}
+main #Services #serviceCards .serviceCard .serviceCard__TextAndImage {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: none;
+  margin: 2vh;
+}
+main #Services #serviceCards .serviceCard .serviceCard__TextAndImage .serviceCard__Text {
+  display: flex;
+  flex-direction: column;
+  border: none;
+}
+main #Services #serviceCards .serviceCard .serviceCard__TextAndImage .serviceCard__Text a {
+  font-size: 16px;
+}
+main #Services #serviceCards .serviceCard .serviceCard__TextAndImage .serviceCard__Text p {
+  font-size: 14px;
+}
+main #Services #serviceCards .serviceCard .serviceCard__TextAndImage i {
+  color: white;
 }
 main #Stack {
   flex-direction: column;
@@ -598,8 +635,17 @@ main #Stack .stackMain .stackMain__Card .stackMain__CardText {
   flex-direction: column;
   border: none;
 }
+main #Stack .stackMain .stackMain__Card .stackMain__CardText a {
+  font-size: 16px;
+}
+main #Stack .stackMain .stackMain__Card .stackMain__CardText p {
+  font-size: 14px;
+}
 main #Blog {
   flex-direction: column;
+}
+main #Blog .sectionHeader__Left .button-effect-inner {
+  height: 4.1vh;
 }
 main #Blog .sectionHeader__Center li:nth-child(2) {
   margin-left: -46vh;
@@ -637,24 +683,35 @@ main #Blog .blogMain a .blogMain__Card .blogMain__CardTextAndArrow .blogMain__Ca
 }
 main .Testimonial {
   flex-direction: column;
+  justify-content: space-between;
   overflow: hidden;
 }
-main .Testimonial ul {
-  display: flex;
+main .Testimonial .testimonialHeader {
+  justify-content: space-between;
 }
-main .Testimonial ul .testimonialCard {
+main .Testimonial .swiper-wrapper {
+  display: flex;
+  margin: 2vh;
+}
+main .Testimonial .swiper-wrapper .testimonialCard {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   flex-basis: 50%;
 }
-main .Testimonial ul .testimonialCard .testimonialCard__Top {
+main .Testimonial .swiper-wrapper .testimonialCard .testimonialCard__Top {
   display: flex;
 }
-main .Testimonial ul .testimonialCard .testimonialCard__Top img {
+main .Testimonial .swiper-wrapper .testimonialCard .testimonialCard__Top img {
   width: 10vh;
   height: 10vh;
 }
-main .Testimonial ul .testimonialCard .testimonialCard__Top .testimonialCard__TopText {
+main .Testimonial .swiper-wrapper .testimonialCard .testimonialCard__Top .testimonialCard__TopTextWithImage {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+main .Testimonial .swiper-wrapper .testimonialCard .testimonialCard__Top .testimonialCard__TopTextWithImage .testimonialCard__TopText {
   display: flex;
   flex-direction: column;
 }
@@ -671,9 +728,73 @@ main .Gallery .swiper-wrapper .swiper-slide {
 main #Contact {
   flex-direction: column;
 }
-main #Contact form input {
+main #Contact .contactMain {
+  display: flex;
+  justify-content: space-between;
+  border: none;
+}
+main #Contact .contactMain form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 2vh;
+  padding: 25px;
+  border: var(--main-element-border);
+}
+main #Contact .contactMain form input, main #Contact .contactMain form textarea, main #Contact .contactMain form button {
+  width: 100%;
   padding: 17px 13px;
   margin-bottom: 24px;
+  background: none;
+  border: var(--main-element-border);
+  color: black;
+}
+main #Contact .contactMain form button {
+  cursor: pointer;
+}
+main #Contact .contactMain .contactInfo {
+  max-width: 389px;
+  width: 100%;
+  padding: 14px 14px 18px 14px;
+  margin: 2vh;
+  display: flex;
+  flex-direction: column;
+  gap: 8vh;
+}
+main #Contact .contactMain .contactInfo .sectionHeader__Left {
+  width: -moz-max-content;
+  width: max-content;
+  margin-top: 2.1vh;
+}
+main #Contact .contactMain .contactInfo .sectionHeader__Left h4 {
+  padding: 15px;
+  width: 15vh;
+}
+main #Contact .contactMain .contactInfo .contactInfo__Cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border: none;
+}
+main #Contact .contactMain .contactInfo .contactInfo__Cards .contactInfo__Card {
+  display: flex;
+  border: none !important;
+  gap: 2vh;
+}
+main #Contact .contactMain .contactInfo .contactInfo__Cards .contactInfo__Card .contactInfo__Icon {
+  height: 10vh;
+}
+main #Contact .contactMain .contactInfo .contactInfo__Cards .contactInfo__Card .contactInfo__Icon i {
+  width: 9vh;
+  padding: 3.5vh 3vh;
+  color: white;
+}
+main #Contact .contactMain .contactInfo .contactInfo__Cards .contactInfo__Card .contactInfo__CardText {
+  display: flex;
+  flex-direction: column;
+  padding: 2vh;
+  width: 100%;
 }
 
 main .ProjectsPage,

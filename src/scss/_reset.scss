@@ -10,7 +10,7 @@
 }
 
 body {
-    background-color: black;
+    background: linear-gradient(180deg, #3A1C71 0%, #e0be25 100%);
 }
 
 :root {
@@ -18,7 +18,7 @@ body {
     --cotton-candy-pink-shade: #ff76cf3d;
     --light-gray-color: #bcbcbcb3;
     --off-white-color: #f9f9f9;
-    --main-element-border: .75px solid rgba(252, 252, 252, 0.05);
+    --main-element-border: .75px solid rgba(255, 255, 255, 0.308);
 }
 
 a {
@@ -43,7 +43,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p {
-    color: var(--light-gray-color);
+    color: var(--off-white-color);
     font-weight: 300;
 }
 
