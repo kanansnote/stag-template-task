@@ -76,7 +76,6 @@ header {
                     align-items: center;
                     gap: 1.5vh;
                     width: 100%;
-                    border: var(--main-element-border);
                     padding: 2vh;
 
                     i {
@@ -85,6 +84,10 @@ header {
                         text-align: center;
                         padding: 1px;
                     }
+                }
+
+                .pageActive {
+                    border: var(--main-element-border);
                 }
             }
         }

@@ -18,6 +18,10 @@ body {
   --main-element-border: .75px solid rgba(255, 255, 255, 0.308);
 }
 
+body, a, i {
+  color: #f9f9f9;
+}
+
 a {
   text-decoration: none;
   width: -moz-max-content;
@@ -221,6 +225,16 @@ section {
     left: -9px;
   }
 }
+/* Scroll to Top Button */
+#topBtn {
+  z-index: 10;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#topBtn:hover {
+  color: #f9f9f9;
+}
+
 header {
   display: flex;
   flex-direction: column;
@@ -289,7 +303,6 @@ header nav ul li a {
   align-items: center;
   gap: 1.5vh;
   width: 100%;
-  border: var(--main-element-border);
   padding: 2vh;
 }
 header nav ul li a i {
@@ -297,6 +310,9 @@ header nav ul li a i {
   height: 3vh;
   text-align: center;
   padding: 1px;
+}
+header nav ul li .pageActive {
+  border: var(--main-element-border);
 }
 
 main {
@@ -406,6 +422,8 @@ main #Intro .introRight .introRight__Bottom .introRight__BottomRight {
   flex-direction: column;
   flex-basis: 50%;
   padding: 1vh 3vh 1vh 3vh;
+  overflow: hidden;
+  height: 100%;
 }
 main #Intro .introRight .introRight__Bottom .introRight__BottomRight .introRight__BottomRight__Top {
   display: flex;
@@ -422,6 +440,20 @@ main #Intro .introRight .introRight__Bottom .introRight__BottomRight .introRight
   display: flex;
   align-items: center;
   gap: 1vh;
+}
+main #Intro .introRight .introRight__Bottom .introRight__BottomRight .introRight__BottomRight__Bottom {
+  width: 100%;
+  height: 20vh;
+  border: none;
+  position: relative;
+}
+main #Intro .introRight .introRight__Bottom .introRight__BottomRight .introRight__BottomRight__Bottom img {
+  width: 55vh;
+  height: 45vh;
+  border: none;
+  position: absolute;
+  top: 2vh;
+  left: -3vh;
 }
 main .Projects {
   flex-direction: column;

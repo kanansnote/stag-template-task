@@ -20,6 +20,10 @@ body {
     --main-element-border: .75px solid rgba(255, 255, 255, 0.308);
 }
 
+body, a, i {
+    color: #f9f9f9;
+}
+
 a {
     text-decoration: none;
     width: max-content;
@@ -248,3 +252,15 @@ section {
       left: -9px;
     }
 }
+
+/* Scroll to Top Button */
+#topBtn {
+    z-index: 10;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+        color: #f9f9f9;
+    }
+}
+

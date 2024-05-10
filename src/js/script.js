@@ -49,3 +49,28 @@ document.addEventListener("scroll", function() {
   });
 });
 
+const topBtn = document.getElementById("topBtn");
+
+window.onscroll = function() { scrollFunction() };
+
+function scrollFunction() {
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    topBtn.style.display = "block";  /* Show button when scrolled down */
+  } else {
+    topBtn.style.display = "none";   /* Hide button when scrolled up */
+  }
+}
+
+topBtn.addEventListener("click", function() {
+  document.documentElement.scrollIntoView({
+    behavior: 'smooth',  // Enables smooth scrolling animation
+    block: 'start'       // Scrolls to the top of the page
+  });
+});
+
+const updateHours = String(new Date().getHours());
+const updateMinutes = String(new Date().getMinutes());
+const updateTime = updateHours + ':' + updateMinutes;
+const copyrightElement = document.getElementById("currentTime");
+
+copyrightElement.innerHTML = updateTime;

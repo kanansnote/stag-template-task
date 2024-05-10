@@ -119,6 +119,8 @@ main {
                     flex-direction: column;
                     flex-basis: 50%;
                     padding: 1vh 3vh 1vh 3vh;
+                    overflow: hidden;
+                    height: 100%;
                     
                     .introRight__BottomRight__Top {
                         display: flex;
@@ -136,6 +138,22 @@ main {
                                 align-items: center;
                                 gap: 1vh;
                             }
+                        }
+                    }
+
+                    .introRight__BottomRight__Bottom {
+                        width: 100%;
+                        height: 20vh;
+                        border: none;
+                        position: relative;
+                        
+                        img {
+                            width: 55vh;
+                            height: 45vh;
+                            border: none;
+                            position: absolute;
+                            top: 2vh;
+                            left: -3vh;
                         }
                     }
 
