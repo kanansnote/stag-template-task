@@ -242,12 +242,12 @@ header {
   position: fixed;
   left: 18px;
   top: 18px;
-  width: 353px;
+  width: 320px;
   height: 96vh;
   border-color: rgba(49, 53, 55, 0.05);
   background-color: var(--cotton-candy-pink-shade);
   border: var(--main-element-border);
-  padding: 34px 28px 24px;
+  padding: 34px 15px 24px;
 }
 header .headerTop {
   display: flex;
@@ -275,7 +275,8 @@ header .headerTop .headerTop__Bottom {
   display: flex;
   align-items: center;
   gap: 2vh;
-  padding: 27px 0 27px 27px;
+  margin-top: 2vh;
+  padding: 27px 0 27px 15px;
 }
 header .headerTop .headerTop__Bottom img {
   width: 15vh;
@@ -317,7 +318,7 @@ header nav ul li .pageActive {
 
 main {
   position: relative;
-  left: 65vh;
+  left: 55vh;
   width: 150vh;
   height: 100%;
   padding: 3.1vh 1vh;
@@ -673,6 +674,7 @@ main #Blog .blogMain {
   display: flex;
   justify-content: space-between;
   padding: 2vh;
+  margin: 1vh 2vh;
 }
 main #Blog .blogMain a .blogMain__Card {
   width: 100%;
@@ -708,46 +710,54 @@ main .Testimonial {
 main .Testimonial .testimonialHeader {
   justify-content: space-between;
 }
-main .Testimonial .swiper-wrapper {
+main .Testimonial .testimonialCards {
   display: flex;
-  margin: 2vh;
+  margin: 1vh 2vh;
 }
-main .Testimonial .swiper-wrapper .testimonialCard {
+main .Testimonial .testimonialCards .testimonialCard {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   flex-basis: 50%;
 }
-main .Testimonial .swiper-wrapper .testimonialCard .testimonialCard__Top {
+main .Testimonial .testimonialCards .testimonialCard .testimonialCard__Top {
   display: flex;
   border: none;
 }
-main .Testimonial .swiper-wrapper .testimonialCard .testimonialCard__Top img {
-  width: 10vh;
-  height: 10vh;
+main .Testimonial .testimonialCards .testimonialCard .testimonialCard__Top .testimonialHero {
+  width: 12vh;
+  height: 12vh;
 }
-main .Testimonial .swiper-wrapper .testimonialCard .testimonialCard__Top .testimonialCard__TopTextWithImage {
-  width: 100%;
+main .Testimonial .testimonialCards .testimonialCard .testimonialCard__Top .testimonialCard__TopTextWithImage {
+  width: 82.2%;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
   border: none;
 }
-main .Testimonial .swiper-wrapper .testimonialCard .testimonialCard__Top .testimonialCard__TopTextWithImage .testimonialCard__TopText {
+main .Testimonial .testimonialCards .testimonialCard .testimonialCard__Top .testimonialCard__TopTextWithImage .testimonialCard__TopText {
+  padding: 2.1vh;
   display: flex;
   flex-direction: column;
   gap: 1vh;
-  padding-left: 2vh;
-  padding-top: 0.5vh;
-  width: 100%;
+  width: 75% !important;
+}
+main .Testimonial .testimonialCards .testimonialCard .testimonialCard__Top .testimonialCard__TopTextWithImage .testimonialIcon {
+  width: 12vh;
+  height: 12vh;
+  padding: 2vh;
+}
+main .Testimonial .testimonialCards .testimonialCard p {
+  width: 94% !important;
+  border: var(--main-element-border);
+  padding: 2vh;
 }
 main .Gallery {
   flex-direction: column;
   overflow: hidden;
 }
-main .Gallery .swiper-wrapper {
+main .Gallery .galleryImages {
   width: 100%;
 }
-main .Gallery .swiper-wrapper .swiper-slide {
+main .Gallery .galleryImages .galleryImage {
   width: 25vh;
 }
 main #Contact {
@@ -785,7 +795,7 @@ main #Contact .contactMain .contactInfo {
   margin: 2vh;
   display: flex;
   flex-direction: column;
-  gap: 8vh;
+  gap: 5vh;
 }
 main #Contact .contactMain .contactInfo .sectionHeader__Left {
   width: -moz-max-content;
@@ -800,6 +810,7 @@ main #Contact .contactMain .contactInfo .contactInfo__Cards {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  gap: 5vh;
   border: none;
 }
 main #Contact .contactMain .contactInfo .contactInfo__Cards .contactInfo__Card {
@@ -824,7 +835,7 @@ main #Contact .contactMain .contactInfo .contactInfo__Cards .contactInfo__Card .
 
 footer {
   position: relative;
-  left: 65vh;
+  left: 55vh;
   width: 150vh;
   height: 100%;
   padding: 3.1vh 1vh;
@@ -903,4 +914,59 @@ main .GalleryPage .galleryMain .projectsPageMain__Card .projectsPageMain__CardLi
 }
 main .GalleryPage .marqueeEffect li:nth-child(2) {
   margin-left: -41vh !important;
+}
+main .blogPageMain {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 2vh;
+  margin: 1vh 2vh;
+}
+main .blogPageMain .blogPageMain__Card {
+  width: 68vh;
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+  padding: 2vh;
+}
+main .blogPageMain .blogPageMain__Card img {
+  width: 63.5vh;
+  height: 34vh;
+}
+main .blogPageMain .blogPageMain__Card .blogPageMain__Header {
+  display: flex;
+  gap: 2vh;
+  border: none;
+}
+main .blogPageMain .blogPageMain__Card .blogPageMain__Header span {
+  border: var(--main-element-border);
+  padding: 5px 8px;
+}
+main .blogPageMain .blogPageMain__Card .blogPageMain__CardTextAndArrow {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 2vh 0;
+}
+main .blogPageMain .blogPageMain__Card .blogPageMain__CardTextAndArrow .blogPageMain__CardText {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  border: none;
+  padding: 2vh;
+}
+main .blogPageMain .blogPageMain__Card .blogPageMain__CardTextAndArrow .blogPageMain__CardText h4 {
+  border-bottom: var(--main-element-border);
+  padding-bottom: 2vh;
+  margin-top: -1vh;
+}
+main .blogPageMain .blogPageMain__Card .blogPageMain__CardTextAndArrow .blogPageMain__CardText p {
+  padding-top: 3vh;
+  margin-bottom: -1vh;
+}
+main .blogPageMain .blogPageMain__Card .blogPageMain__CardTextAndArrow .blogPageMain__CardArrow {
+  margin-bottom: 6vh !important;
+  padding: 2vh;
+  margin: 2vh;
 }/*# sourceMappingURL=style.css.map */

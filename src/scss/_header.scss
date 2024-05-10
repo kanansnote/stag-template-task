@@ -5,12 +5,12 @@ header {
     position: fixed;
     left: 18px;
     top: 18px;
-    width: 353px;
+    width: 320px;
     height: 96vh;
     border-color: rgba(49, 53, 55, 0.05);
     background-color: var(--cotton-candy-pink-shade);
     border: var(--main-element-border);
-    padding: 34px 28px 24px;
+    padding: 34px 15px 24px;
 
     .headerTop {
         display: flex;
@@ -41,7 +41,8 @@ header {
             display: flex;
             align-items: center;
             gap: 2vh;
-            padding: 27px 0 27px 27px;
+            margin-top: 2vh;
+            padding: 27px 0 27px 15px;
 
             img {
                 width: 15vh;

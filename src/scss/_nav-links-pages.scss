@@ -56,4 +56,70 @@ main {
     .GalleryPage .marqueeEffect li:nth-child(2) {
         margin-left: -41vh !important;
     }
+
+    .blogPageMain {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        padding: 2vh;
+        margin: 1vh 2vh;
+
+        .blogPageMain__Card {
+            width: 68vh;
+            display: flex;
+            flex-direction: column;
+            gap: 1vh;
+            padding: 2vh;
+    
+            img {
+                width: 63.5vh;
+                height: 34vh;
+            }
+            
+            .blogPageMain__Header {
+                display: flex;
+                gap: 2vh;
+                border: none;
+
+                span {
+                    border: var(--main-element-border);
+                    padding: 5px 8px;
+                }
+
+            }
+            .blogPageMain__CardTextAndArrow {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                width: 100%;
+                padding: 2vh 0;
+
+                .blogPageMain__CardText {
+                    display: flex;
+                    flex-direction: column;
+                    width: 90%;
+                    border: none;
+                    padding: 2vh;
+
+                    h4 {
+                        border-bottom: var(--main-element-border);
+                        padding-bottom: 2vh;
+                        margin-top: -1vh;
+                    }
+
+                    p {
+                        padding-top: 3vh;
+                        margin-bottom: -1vh;
+                    }
+                }
+
+                .blogPageMain__CardArrow {
+                    margin-bottom: 6vh !important;
+                    padding: 2vh;
+                    margin: 2vh;
+                }
+            }
+        }
+    }
+
 }
