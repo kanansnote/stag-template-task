@@ -174,7 +174,7 @@ main {
         }
 
         .projectsHeader__Left {
-            width: 38vh;
+            width: 35vh;
         }
 
         .projectsHeader__Center {
@@ -198,12 +198,16 @@ main {
                 border: none;
 
                 .projectsMain__Card {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 2vh;
                     width: 25%;
-                    padding: 1vh;
+                    padding: 1vh 1vh 0;
 
                     img {
-                        width: 45vh;
-                        height: 45vh;
+                        width: 44vh;
+                        padding-top: 1vh;
+                        padding-left: 1.4vh;
                         border: none;
                     }
 
@@ -211,12 +215,48 @@ main {
                         display: flex;
                         flex-direction: column;
                         border: none;
+                        padding: 0 5px 15px 10px;
                         
                         a {
                             display: flex;
                             justify-content: space-between;
                             align-items: center;
                             width: 98%;
+
+                            &:hover {
+                                color: var(--golden-yellow-color) !important;
+
+                                i {
+                                    transform: translateY(-3.7vh);
+                                    color: var(--golden-yellow-color) !important;
+                                }
+                            }
+
+                            .projectsMain__CardArrows {
+                                display: flex;
+                                flex-direction: column;
+                                width: 5vh;
+                                height: 5vh;
+                                gap: 1.5vh;
+                                overflow: hidden;
+
+                                i {
+                                    text-align: center;
+                                    font-size: 16px;
+                                    transition: 0.1s ease-in-out;
+
+                                    &:nth-child(1) {
+                                        padding-top: 1.1vh;
+                                    }
+                                }
+
+                                &:hover {
+                                    i {
+                                        transform: translateY(-3.7vh);
+                                        color: var(--golden-yellow-color) !important;
+                                    }
+                                }
+                            }
                         }
 
                         span {
@@ -267,7 +307,6 @@ main {
                 border: var(--main-element-border);
             }
         }
-        
     }
     
     #EducationAndExperience {
@@ -329,47 +368,51 @@ main {
         }
 
         #serviceCards {
-            flex-wrap: wrap;
+            display: flex;
             justify-content: center;
-            margin: 1.1vh;
+            flex-wrap: wrap;
+            margin: 1vh 2vh;
             
             .serviceCard {
-                flex-basis: 49%;
+                display: flex;
+                flex-wrap: wrap;
+                width: 48%;
+                height: 100%;
                 border: var(--main-element-border);
-                margin: 4px;
-                gap: 2vh;
-                height: 15vh;
-
-                span {
-                    margin: 2vh;
-                    font-size: 14px;
-                }
+                margin: 8px;
+                transition: 0.15s ease-in-out;
                 
+                &:hover {
+                    border-color: var(--golden-yellow-color);
+                }
+
                 .serviceCard__TextAndImage {
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
                     border: none;
                     margin: 2vh;
+                    width: 100%;
+                    height: 100%;
 
                     .serviceCard__Text {
                         display: flex;
                         flex-direction: column;
                         border: none;
-
-                        a {
-                            font-size: 16px;
-                        }
-
+                    
                         p {
                             font-size: 14px;
                         }
                     }
-
+                    
                     i {
                         color: white;
                     }
+                }
 
+                span {
+                    margin: 2vh;
+                    font-size: 14px;
                 }
             }
         }
@@ -408,6 +451,11 @@ main {
 
                     a {
                         font-size: 16px;
+                        transition: 0.1s ease-in-out;
+
+                        &:hover {
+                            color: var(--golden-yellow-color) !important;
+                        }
                     }
 
                     p {
@@ -440,6 +488,18 @@ main {
 
             a {
 
+                &:hover {
+                    
+                    h4 {
+                        color: var(--golden-yellow-color) !important;
+                    }
+
+                    i {
+                        transform: translateY(-3.7vh);
+                        color: var(--golden-yellow-color) !important;
+                    }
+                }
+
                 .blogMain__Card {
                     width: 100%;
                     padding: 2vh;
@@ -466,7 +526,28 @@ main {
 
                         .blogMain__CardTextAndArrow__Arrow {
                             display: flex;
-                            border: none;
+                            flex-direction: column;
+                            width: 5vh;
+                            height: 5vh;
+                            gap: 1.5vh;
+                            overflow: hidden;
+
+                            i {
+                                text-align: center;
+                                font-size: 16px;
+                                transition: 0.1s ease-in-out;
+
+                                &:nth-child(1) {
+                                    padding-top: 1.1vh;
+                                }
+                            }
+
+                            &:hover {
+                                i {
+                                    transform: translateY(-3.7vh);
+                                    color: var(--golden-yellow-color) !important;
+                                }
+                            }
                         }
                     }
                 }
@@ -569,11 +650,19 @@ main {
                     margin-bottom: 24px;
                     background: none;
                     border: var(--main-element-border);
+                }
+
+                input::placeholder, textarea::placeholder {
                     color: black;
                 }
 
                 button {
                     cursor: pointer;
+                    transition: 0.3s ease-in-out;
+
+                    &:hover {
+                        border-color: black;
+                    }
                 }
             }
             

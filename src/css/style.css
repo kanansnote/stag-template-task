@@ -16,6 +16,7 @@ body {
   --cotton-candy-pink-shade: #ff76cf3d;
   --off-white-color: #f9f9f9;
   --main-element-border: .75px solid rgba(255, 255, 255, 0.308);
+  --golden-yellow-color: #e0be25;
 }
 
 body, a, i {
@@ -229,7 +230,7 @@ section {
 #topBtn {
   z-index: 10;
   cursor: pointer;
-  transition: 0.3s;
+  transition: 0.5s ease-in-out;
 }
 #topBtn:hover {
   color: #f9f9f9;
@@ -466,7 +467,7 @@ main .Projects .marqueeEffect li:nth-child(2) {
   margin-left: -4vh !important;
 }
 main .Projects .projectsHeader__Left {
-  width: 38vh;
+  width: 35vh;
 }
 main .Projects .projectsHeader__Center .marqueeEffect li {
   width: 155%;
@@ -485,24 +486,56 @@ main .Projects .projectsMain .projectsMain__Cards {
   border: none;
 }
 main .Projects .projectsMain .projectsMain__Cards .projectsMain__Card {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
   width: 25%;
-  padding: 1vh;
+  padding: 1vh 1vh 0;
 }
 main .Projects .projectsMain .projectsMain__Cards .projectsMain__Card img {
-  width: 45vh;
-  height: 45vh;
+  width: 44vh;
+  padding-top: 1vh;
+  padding-left: 1.4vh;
   border: none;
 }
 main .Projects .projectsMain .projectsMain__Cards .projectsMain__Card .projectsMain__CardLink {
   display: flex;
   flex-direction: column;
   border: none;
+  padding: 0 5px 15px 10px;
 }
 main .Projects .projectsMain .projectsMain__Cards .projectsMain__Card .projectsMain__CardLink a {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 98%;
+}
+main .Projects .projectsMain .projectsMain__Cards .projectsMain__Card .projectsMain__CardLink a:hover {
+  color: var(--golden-yellow-color) !important;
+}
+main .Projects .projectsMain .projectsMain__Cards .projectsMain__Card .projectsMain__CardLink a:hover i {
+  transform: translateY(-3.7vh);
+  color: var(--golden-yellow-color) !important;
+}
+main .Projects .projectsMain .projectsMain__Cards .projectsMain__Card .projectsMain__CardLink a .projectsMain__CardArrows {
+  display: flex;
+  flex-direction: column;
+  width: 5vh;
+  height: 5vh;
+  gap: 1.5vh;
+  overflow: hidden;
+}
+main .Projects .projectsMain .projectsMain__Cards .projectsMain__Card .projectsMain__CardLink a .projectsMain__CardArrows i {
+  text-align: center;
+  font-size: 16px;
+  transition: 0.1s ease-in-out;
+}
+main .Projects .projectsMain .projectsMain__Cards .projectsMain__Card .projectsMain__CardLink a .projectsMain__CardArrows i:nth-child(1) {
+  padding-top: 1.1vh;
+}
+main .Projects .projectsMain .projectsMain__Cards .projectsMain__Card .projectsMain__CardLink a .projectsMain__CardArrows:hover i {
+  transform: translateY(-3.7vh);
+  color: var(--golden-yellow-color) !important;
 }
 main .Projects .projectsMain .projectsMain__Cards .projectsMain__Card .projectsMain__CardLink span {
   font-size: 13px;
@@ -590,20 +623,22 @@ main #Services .serviceHeader .sectionHeader__Center {
   width: 150%;
 }
 main #Services #serviceCards {
-  flex-wrap: wrap;
+  display: flex;
   justify-content: center;
-  margin: 1.1vh;
+  flex-wrap: wrap;
+  margin: 1vh 2vh;
 }
 main #Services #serviceCards .serviceCard {
-  flex-basis: 49%;
+  display: flex;
+  flex-wrap: wrap;
+  width: 48%;
+  height: 100%;
   border: var(--main-element-border);
-  margin: 4px;
-  gap: 2vh;
-  height: 15vh;
+  margin: 8px;
+  transition: 0.15s ease-in-out;
 }
-main #Services #serviceCards .serviceCard span {
-  margin: 2vh;
-  font-size: 14px;
+main #Services #serviceCards .serviceCard:hover {
+  border-color: var(--golden-yellow-color);
 }
 main #Services #serviceCards .serviceCard .serviceCard__TextAndImage {
   display: flex;
@@ -611,20 +646,23 @@ main #Services #serviceCards .serviceCard .serviceCard__TextAndImage {
   justify-content: space-between;
   border: none;
   margin: 2vh;
+  width: 100%;
+  height: 100%;
 }
 main #Services #serviceCards .serviceCard .serviceCard__TextAndImage .serviceCard__Text {
   display: flex;
   flex-direction: column;
   border: none;
 }
-main #Services #serviceCards .serviceCard .serviceCard__TextAndImage .serviceCard__Text a {
-  font-size: 16px;
-}
 main #Services #serviceCards .serviceCard .serviceCard__TextAndImage .serviceCard__Text p {
   font-size: 14px;
 }
 main #Services #serviceCards .serviceCard .serviceCard__TextAndImage i {
   color: white;
+}
+main #Services #serviceCards .serviceCard span {
+  margin: 2vh;
+  font-size: 14px;
 }
 main #Stack {
   flex-direction: column;
@@ -657,6 +695,10 @@ main #Stack .stackMain .stackMain__Card .stackMain__CardText {
 }
 main #Stack .stackMain .stackMain__Card .stackMain__CardText a {
   font-size: 16px;
+  transition: 0.1s ease-in-out;
+}
+main #Stack .stackMain .stackMain__Card .stackMain__CardText a:hover {
+  color: var(--golden-yellow-color) !important;
 }
 main #Stack .stackMain .stackMain__Card .stackMain__CardText p {
   font-size: 14px;
@@ -675,6 +717,13 @@ main #Blog .blogMain {
   justify-content: space-between;
   padding: 2vh;
   margin: 1vh 2vh;
+}
+main #Blog .blogMain a:hover h4 {
+  color: var(--golden-yellow-color) !important;
+}
+main #Blog .blogMain a:hover i {
+  transform: translateY(-3.7vh);
+  color: var(--golden-yellow-color) !important;
 }
 main #Blog .blogMain a .blogMain__Card {
   width: 100%;
@@ -700,7 +749,23 @@ main #Blog .blogMain a .blogMain__Card .blogMain__CardTextAndArrow .blogMain__Ca
 }
 main #Blog .blogMain a .blogMain__Card .blogMain__CardTextAndArrow .blogMain__CardTextAndArrow__Arrow {
   display: flex;
-  border: none;
+  flex-direction: column;
+  width: 5vh;
+  height: 5vh;
+  gap: 1.5vh;
+  overflow: hidden;
+}
+main #Blog .blogMain a .blogMain__Card .blogMain__CardTextAndArrow .blogMain__CardTextAndArrow__Arrow i {
+  text-align: center;
+  font-size: 16px;
+  transition: 0.1s ease-in-out;
+}
+main #Blog .blogMain a .blogMain__Card .blogMain__CardTextAndArrow .blogMain__CardTextAndArrow__Arrow i:nth-child(1) {
+  padding-top: 1.1vh;
+}
+main #Blog .blogMain a .blogMain__Card .blogMain__CardTextAndArrow .blogMain__CardTextAndArrow__Arrow:hover i {
+  transform: translateY(-3.7vh);
+  color: var(--golden-yellow-color) !important;
 }
 main .Testimonial {
   flex-direction: column;
@@ -783,10 +848,19 @@ main #Contact .contactMain form input, main #Contact .contactMain form textarea,
   margin-bottom: 24px;
   background: none;
   border: var(--main-element-border);
+}
+main #Contact .contactMain form input::-moz-placeholder, main #Contact .contactMain form textarea::-moz-placeholder {
+  color: black;
+}
+main #Contact .contactMain form input::placeholder, main #Contact .contactMain form textarea::placeholder {
   color: black;
 }
 main #Contact .contactMain form button {
   cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+main #Contact .contactMain form button:hover {
+  border-color: black;
 }
 main #Contact .contactMain .contactInfo {
   max-width: 389px;
@@ -845,6 +919,9 @@ footer {
 }
 footer div {
   border: none;
+}
+footer a:hover {
+  color: white !important;
 }
 
 main .ProjectsPage,
@@ -915,6 +992,68 @@ main .GalleryPage .galleryMain .projectsPageMain__Card .projectsPageMain__CardLi
 main .GalleryPage .marqueeEffect li:nth-child(2) {
   margin-left: -41vh !important;
 }
+main #StayUpToDate {
+  flex-direction: column;
+}
+main #StayUpToDate .stayUpToDateHeader__Left {
+  width: 60vh;
+}
+main #StayUpToDate .stayUpToDateMain {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 2vh;
+  padding: 2vh 0;
+}
+main #StayUpToDate .stayUpToDateMain input,
+main #StayUpToDate .stayUpToDateMain button {
+  width: 48%;
+  padding: 12px 10px;
+  background: none;
+  border: var(--main-element-border);
+  transition: 0.3s ease-in-out;
+}
+main #StayUpToDate .stayUpToDateMain input:hover,
+main #StayUpToDate .stayUpToDateMain button:hover {
+  color: black;
+  border-color: black;
+}
+main #StayUpToDate .stayUpToDateMain input::-moz-placeholder {
+  color: #f9f9f9;
+}
+main #StayUpToDate .stayUpToDateMain input::placeholder {
+  color: #f9f9f9;
+}
+main #StayUpToDate .stayUpToDateMain button {
+  cursor: pointer;
+  color: #f9f9f9;
+}
+main #StayUpToDate .partnersInfo {
+  justify-content: space-between;
+  width: 100%;
+  gap: 5vh;
+}
+main #StayUpToDate .partnersInfo li {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 2vh;
+  width: 20vw;
+  padding: 2vh;
+  border: var(--main-element-border);
+}
+main .contactMain .contactPageForm input::-moz-placeholder, main .contactMain .contactPageForm textarea::-moz-placeholder {
+  color: #f9f9f9 !important;
+}
+main .contactMain .contactPageForm input::placeholder,
+main .contactMain .contactPageForm textarea::placeholder {
+  color: #f9f9f9 !important;
+}
+main .contactMain .contactPageForm button {
+  color: #f9f9f9;
+}
+main .contactMain .contactPageForm button:hover {
+  color: black;
+}
 main .blogPageMain {
   display: flex;
   justify-content: space-evenly;
@@ -922,51 +1061,80 @@ main .blogPageMain {
   padding: 2vh;
   margin: 1vh 2vh;
 }
-main .blogPageMain .blogPageMain__Card {
+main .blogPageMain a:hover h4 {
+  color: var(--golden-yellow-color) !important;
+}
+main .blogPageMain a:hover i {
+  transform: translateY(-3.7vh);
+  color: var(--golden-yellow-color) !important;
+}
+main .blogPageMain a:hover .blogPageMain__Card {
+  border-color: var(--golden-yellow-color);
+}
+main .blogPageMain a .blogPageMain__Card {
   width: 68vh;
   display: flex;
   flex-direction: column;
   gap: 1vh;
   padding: 2vh;
+  transition: 0.3s ease-in-out;
+  margin: 6px;
 }
-main .blogPageMain .blogPageMain__Card img {
+main .blogPageMain a .blogPageMain__Card img {
   width: 63.5vh;
   height: 34vh;
 }
-main .blogPageMain .blogPageMain__Card .blogPageMain__Header {
+main .blogPageMain a .blogPageMain__Card .blogPageMain__Header {
   display: flex;
   gap: 2vh;
   border: none;
 }
-main .blogPageMain .blogPageMain__Card .blogPageMain__Header span {
+main .blogPageMain a .blogPageMain__Card .blogPageMain__Header span {
   border: var(--main-element-border);
   padding: 5px 8px;
 }
-main .blogPageMain .blogPageMain__Card .blogPageMain__CardTextAndArrow {
+main .blogPageMain a .blogPageMain__Card .blogPageMain__CardTextAndArrow {
   display: flex;
   justify-content: space-around;
   align-items: center;
   width: 100%;
   padding: 2vh 0;
 }
-main .blogPageMain .blogPageMain__Card .blogPageMain__CardTextAndArrow .blogPageMain__CardText {
+main .blogPageMain a .blogPageMain__Card .blogPageMain__CardTextAndArrow .blogPageMain__CardText {
   display: flex;
   flex-direction: column;
   width: 90%;
   border: none;
   padding: 2vh;
 }
-main .blogPageMain .blogPageMain__Card .blogPageMain__CardTextAndArrow .blogPageMain__CardText h4 {
+main .blogPageMain a .blogPageMain__Card .blogPageMain__CardTextAndArrow .blogPageMain__CardText h4 {
   border-bottom: var(--main-element-border);
   padding-bottom: 2vh;
   margin-top: -1vh;
 }
-main .blogPageMain .blogPageMain__Card .blogPageMain__CardTextAndArrow .blogPageMain__CardText p {
+main .blogPageMain a .blogPageMain__Card .blogPageMain__CardTextAndArrow .blogPageMain__CardText p {
   padding-top: 3vh;
   margin-bottom: -1vh;
 }
-main .blogPageMain .blogPageMain__Card .blogPageMain__CardTextAndArrow .blogPageMain__CardArrow {
+main .blogPageMain a .blogPageMain__Card .blogPageMain__CardTextAndArrow .blogPageMain__CardArrow {
+  display: flex;
+  flex-direction: column;
   margin-bottom: 6vh !important;
-  padding: 2vh;
   margin: 2vh;
+  overflow: hidden;
+  width: 5vh;
+  height: 5vh;
+  gap: 1.5vh;
+}
+main .blogPageMain a .blogPageMain__Card .blogPageMain__CardTextAndArrow .blogPageMain__CardArrow i {
+  text-align: center;
+  font-size: 16px;
+  transition: 0.1s ease-in-out;
+}
+main .blogPageMain a .blogPageMain__Card .blogPageMain__CardTextAndArrow .blogPageMain__CardArrow i:nth-child(1) {
+  padding-top: 1vh;
+}
+main .blogPageMain a .blogPageMain__Card .blogPageMain__CardTextAndArrow .blogPageMain__CardArrow:hover i {
+  transform: translateY(-3.7vh);
+  color: var(--golden-yellow-color) !important;
 }/*# sourceMappingURL=style.css.map */

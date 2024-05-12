@@ -35,7 +35,7 @@ const gallerySwiper = new Swiper('.Gallery', {
 document.addEventListener("scroll", function() {
   const scrollPosition = window.scrollY;
   const targetElements = document.querySelectorAll('body, a, i');
-
+    
   const threshold = 1700;
 
   targetElements.forEach(element => {
@@ -68,8 +68,8 @@ topBtn.addEventListener("click", function() {
   });
 });
 
-const updateHours = String(new Date().getHours());
-const updateMinutes = String(new Date().getMinutes());
+const updateHours = String(new Date().getHours()).padStart(2, '0');
+const updateMinutes = String(new Date().getMinutes()).padStart(2, '0');
 const updateTime = updateHours + ':' + updateMinutes;
 const copyrightElement = document.getElementById("currentTime");
 

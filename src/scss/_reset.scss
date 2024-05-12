@@ -18,6 +18,7 @@ body {
     --cotton-candy-pink-shade: #ff76cf3d;
     --off-white-color: #f9f9f9;
     --main-element-border: .75px solid rgba(255, 255, 255, 0.308);
+    --golden-yellow-color: #e0be25;
 }
 
 body, a, i {
@@ -257,8 +258,8 @@ section {
 #topBtn {
     z-index: 10;
     cursor: pointer;
-    transition: 0.3s;
-
+    transition: 0.5s ease-in-out;
+    
     &:hover {
         color: #f9f9f9;
     }
