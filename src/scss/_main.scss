@@ -246,7 +246,7 @@ main {
                                     transition: 0.1s ease-in-out;
 
                                     &:nth-child(1) {
-                                        padding-top: 1.1vh;
+                                        padding-top: 1vh;
                                     }
                                 }
 
@@ -579,7 +579,8 @@ main {
                     
                     .testimonialHero {
                         width: 12vh;
-                        height: 12vh;
+                        height: 13vh;
+                        padding: 1vh;
                     }
                     
                     .testimonialCard__TopTextWithImage {
@@ -589,7 +590,7 @@ main {
                         border: none;
                         
                         .testimonialCard__TopText {
-                            padding: 2.1vh;
+                            padding: 2.3vh;
                             display: flex;
                             flex-direction: column;
                             gap: 1vh;
@@ -598,7 +599,7 @@ main {
 
                         .testimonialIcon {
                             width: 12vh;
-                            height: 12vh;
+                            height: 13vh;
                             padding: 2vh;
 
                         }
@@ -606,7 +607,7 @@ main {
                 }
 
                 p {
-                    width: 94% !important;
+                    width: 94.1% !important;
                     border: var(--main-element-border);
                     padding: 2vh;
                 }

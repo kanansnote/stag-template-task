@@ -1,3 +1,5 @@
+// Container sliders
+
 const projectsSwiper1 = new Swiper('.projectsMain1', {
     slidesPerView: '3', // Adjust this value to control how many slides are visible at a time
     navigation: {
@@ -32,22 +34,42 @@ const gallerySwiper = new Swiper('.Gallery', {
   },
 });
 
+// Color change on scrolling
+
 document.addEventListener("scroll", function() {
   const scrollPosition = window.scrollY;
-  const targetElements = document.querySelectorAll('body, a, i');
-    
-  const threshold = 1700;
+  const targetElements = document.querySelectorAll('body, a, i, button');
 
-  targetElements.forEach(element => {
-    if (scrollPosition > threshold) {
-      element.style.color = 'black';
-      element.style.transition = '0.5s ease-in-out';
+  const pageThresholds = {
+    homePage: 1700,
+    projectsPage: 1000,
+    aboutPage: 1000,
+    galleryPage: 1000,
+    contactPage: 200,
+    blogPage: 600,
+  };
+
+  // Loop through page names (object keys)
+  for (const pageName in pageThresholds) {
+    const element = document.getElementById(pageName);
+    const threshold = pageThresholds[pageName];
+
+    if (scrollPosition > threshold && element) {
+      targetElements.forEach(target => {
+        target.style.color = 'black';
+        target.style.transition = '0.5s ease-in-out';
+      });
+      break; // Only change color once per page
     } else {
-      element.style.color = '#f9f9f9';
-      element.style.transition = '0.5s ease-in-out';
+      targetElements.forEach(target => {
+        target.style.color = '#f9f9f9';
+        target.style.transition = '0.5s ease-in-out';
+      });
     }
-  });
+  }
 });
+
+// Scroll to Top
 
 const topBtn = document.getElementById("topBtn");
 
@@ -67,6 +89,8 @@ topBtn.addEventListener("click", function() {
     block: 'start'       // Scrolls to the top of the page
   });
 });
+
+// Live time implementation
 
 const updateHours = String(new Date().getHours()).padStart(2, '0');
 const updateMinutes = String(new Date().getMinutes()).padStart(2, '0');
